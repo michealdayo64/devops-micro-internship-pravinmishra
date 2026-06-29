@@ -58,11 +58,11 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Ignoring pain can worsen injuries
 
 ### Evidence from my life
 
-Add your answer here...
+As a child, I injured my toe but hid it from my parents. Even though the pain became severe, I kept ignoring it. By the time the injury was finally addressed, the damage had already affected my toenail permanently. To this day, that nail has never returned to its original shape. That experience taught me that ignoring pain doesn't make it disappear, it can make the consequences permanent.
 
 ---
 
@@ -70,11 +70,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Confidence without preparation can lead to failure
 
 ### Evidence from my life
 
-Add your answer here...
+During my university years, I made the mistake of overlooking a course because I had studied a similar version of it during my diploma program. I assumed my previous knowledge would be enough, so I didn't prepare properly. When the examination came, I discovered that the university tested the subject from a different perspective and at a higher standard. I failed the course not because I lacked intelligence, but because of lack of preparation. That experience taught me that confidence is never a substitute for preparation.
 
 ---
 

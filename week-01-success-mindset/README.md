@@ -33,7 +33,10 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+I believe that creating healthy boundaries attracts respect rather than pushes people away. Unfortunately, many people around me, especially family members see boundaries as a form of avoidance or unfriendliness. They often interpret them as rejection instead of understanding that boundaries are about protecting personal space and maintaining healthy relationships.
+For example, I prefer that friends or family let me know before visiting my home. To me, that's simply a matter of respect and consideration, not an attempt to avoid anyone. I believe there's a time for everything, and giving someone notice before showing up allows them to prepare or let you know if it's a convenient time.
+In my view, boundaries don't weaken relationships, they strengthen them. They create mutual respect, improve communication, and help prevent unnecessary misunderstandings. The people who truly value you will respect your boundaries instead of taking them personally.
+
 
 ---
 

@@ -138,14 +138,30 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+My Version 2.0
+Seven years from now, I wake up with peace, not because life is easy, but because I have built a life that runs on standards instead of motivation.I am no longer chasing success, I have become the kind of person who naturally produces it. My long-term goal was never only to make money but to become a man of value, discipline, and impact. I set out to build businesses that outlive me, create opportunities for others, solve meaningful problems, and leave every place better than I found it. Today, I am a successful farmer, businessman, and Backend & Cloud/DevOps Engineer. These are not just titles, they are the result of years of intentional growth, consistent execution, and a commitment to becoming the person I once envisioned.
+As a successful farmer, I manage productive farmland powered by modern technology, efficient processes, and data-driven decision-making. My farms are built on systems that deliver consistent harvests, sustainable growth, and lasting value. I understand that agriculture is not about working harder every day but about building reliable systems that continue to produce results year after year.
+As a businessman, I have built companies that create value, generate employment, and solve real problems. Every business I own operates with clear standards, capable teams, and repeatable processes. I stopped trying to do everything myself and focused on creating working systems that empower people, technology, and processes to function together efficiently. My businesses continue to grow because they were designed to operate beyond my daily involvement.
+As a Backend and Cloud/DevOps Engineer, I have built a lasting portfolio that reflects years of solving real-world problems. It is more than a collection of projects but a evidence of the value I have consistently created. Every backend application, cloud architecture, CI/CD pipeline, Kubernetes deployment, infrastructure automation, monitoring solution, and security implementation tells the story of my growth, discipline, and commitment to engineering excellence.
+My portfolio spans both past and present projects, demonstrating not only technical expertise but also my ability to design secure, scalable, resilient, and production-ready systems that power businesses with confidence. Complementing this experience are globally recognized cloud certifications that validate my expertise and reinforce the standard I have set for myself. Together, my practical experience and professional certifications have established my credibility as an engineer trusted to build modern cloud infrastructure and reliable software systems.
+The biggest transformation, however, was not in my career, my finances, or my possessions. It was my identity. I stopped asking, "What do I need to achieve?" and started asking, "Who do I need to become?" That single question changed everything.
+I embraced discipline over comfort, consistency over intensity, and systems over shortcuts. I built standards for how I work, how I learn, how I manage money, how I lead people, how I care for my health, how I invest my time, and how I honor my commitments. Those standards became my personal operating system, guiding my decisions even when motivation was absent. I discovered that goals provide direction, but systems create progress. Success is rarely the result of one extraordinary moment but the outcome of ordinary actions performed consistently over time.
+Every morning begins with purpose. Every meeting reflects preparation. Every deployment reflects excellence. Every business decision reflects wisdom. Every investment reflects patience. Every harvest reflects planning. Every opportunity reflects years of unseen work. I no longer measure success by income alone. I measure it by the value I create, the people I develop, the systems I build, the problems I solve, and the legacy I leave behind.
+Looking back, I realize that my greatest achievement was never becoming a successful farmer, businessman, or Backend & Cloud/DevOps Engineer.
+My greatest achievement was changing my identity.
+Because once my identity changed, my habits changed.
+When my habits changed, my standards changed.
+When my standards changed, my systems improved.
+When my systems improved, my results became inevitable.
+Today, I am known as a man of integrity, excellence, innovation, and service. I build resilient cloud infrastructure, successful businesses, productive farms, and high-performing teams. I create opportunities where others see obstacles, and I leave every project, every business, and every community stronger than I found it.
+This is my Version 2.0.
+
 
 ### Public Link
 
 Paste your link here:
 
-`__________________________`
-
+https://docs.google.com/document/d/1p7FQVQqFkP6O9dybb3xs7KujSlrN52GvCPEfEad56SE/edit?usp=sharing
 ---
 
 # Assignment 4. Have you ever cut corners (unethical / dishonest / shortcut behavior — not necessarily illegal)? If yes, how did it make you feel?
@@ -176,7 +192,13 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+Yes, I have cut corners before, and it made me feel bad because I learned the consequences the hard way.
+
+During my first year at university, I went for my student registration. Like every other student, I was supposed to write my name down and follow the normal registration process. However, I came in with the mindset that I could always find a shortcut instead of following due process. I tried to bypass the standard procedure, thinking it would save me time.
+
+Unfortunately, the staff member in charge noticed what I was doing. As a result, my registration documents were withheld, and my registration was delayed for more than three weeks. What should have taken just one day ended up taking nearly a month because I chose not to follow the proper process.
+
+That experience made me realize that trying to take shortcuts often creates bigger problems than the ones you're trying to avoid. I felt disappointed in myself, but it was a valuable lesson. Since then, I have made a conscious effort to follow procedures, act honestly, and do things the right way, even when it takes a little longer.
 
 ---
 
@@ -202,16 +224,16 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. Can't hurt me By David Goggins
+2. Talk Like TED By Carmine Gallo
+3. Deep Walk By Cal Newport
+4. The Blue Zones by Dan Buettner
+5. The Intelligent Investor by Benjamin Graham
+6. The First 90 Days By Michael D. Watkins
+7. Good to Great By Jim Collins
+8. Dare to Lead By Brené Brown
+9. Designing Your Life By Bill Burnett and Dave Evans
+10. The Millionaire Fastlane by MJ DeMarco
 
 ---
 
@@ -240,16 +262,13 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
+* 5hrs of Study Per day and 2hrs session everyday for hands practice with my peers
+* Ship one project to github per week
+* Document my progress on LinkedIn 
+* Make sure i work out 20minute everyday
+* Make sure i sleep 5hrs sleep everyday
 * Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+
 
 ---
 

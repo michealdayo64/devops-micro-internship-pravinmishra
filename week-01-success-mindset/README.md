@@ -264,10 +264,13 @@ List topics only. No need to share numbers.
 
 * 5hrs of Study Per day and 2hrs session everyday for hands practice with my peers
 * Ship one project to github per week
-* Document my progress on LinkedIn 
+* Document my progress on Github Everyday
+* Make one post on LinkedIn weekly
+* Write one technical blog
+* Read One book monthly
 * Make sure i work out 20minute everyday
 * Make sure i sleep 5hrs sleep everyday
-* Add your answer here...
+
 
 
 ---
@@ -294,7 +297,10 @@ Examples:
 
 Answer:
 
-Add your answer here...
+1. For bills, i am thinking of settling my rent next month.
+2. I will be getting married this month and it's something to worry about the expenses and preparation.
+3. I am the first born, i carry the responsibility of taking care of my parent financially.
+4. I and my team have a project idea we are working on.
 
 ---
 
@@ -312,7 +318,7 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
+1. 
 
 ---
 

@@ -82,11 +82,13 @@ During my university years, I made the mistake of overlooking a course because I
 
 ### Truth
 
-Add your answer here...
+If you spend more money than you earn consistently, you will eventually run into financial trouble.
 
 ### Evidence from my life
 
-Add your answer here...
+When I made my first one million naira, I had not yet developed the knowledge or discipline to manage and grow money wisely. Instead of thinking strategically, I let emotion lead. As the first child, I felt a deep responsibility to carry family needs on my head, so I made financial decisions from pressure and emotion rather than calculation and long-term wisdom. In the end, I spent almost 90% of that money.
+
+It was a hard lesson, but an important one. I realized that making money is one thing; managing, protecting, and multiplying it is another skill entirely. Wealth is not built by income alone, but by the ability to make sound decisions with money even when emotions are involved. That experience taught me that if I truly want to build wealth, I cannot allow emotion to override strategy. I need financial systems, discipline, and clear thinking so that every major financial decision is aligned with long-term growth rather than short-term pressure.
 
 ---
 

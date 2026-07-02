@@ -224,16 +224,16 @@ Choose books that improve:
 
 ## Book List
 
-1. Can't hurt me By David Goggins
-2. Talk Like TED By Carmine Gallo
-3. Deep Walk By Cal Newport
-4. The Blue Zones by Dan Buettner
-5. The Intelligent Investor by Benjamin Graham
-6. The First 90 Days By Michael D. Watkins
-7. Good to Great By Jim Collins
-8. Dare to Lead By Brené Brown
-9. Designing Your Life By Bill Burnett and Dave Evans
-10. The Millionaire Fastlane by MJ DeMarco
+1. Can't hurt me - David Goggins
+2. Talk Like TED - Carmine Gallo
+3. Deep Walk - Cal Newport
+4. The Blue Zones - Dan Buettner
+5. The Intelligent Investor - Benjamin Graham
+6. The First 90 Days - Michael D. Watkins
+7. Good to Great - Jim Collins
+8. Dare to Lead - Brené Brown
+9. Designing Your Life - Bill Burnett and Dave Evans
+10. The Millionaire Fastlane - MJ DeMarco
 
 ---
 
@@ -271,8 +271,6 @@ List topics only. No need to share numbers.
 * Make sure i work out 20minute everyday
 * Make sure i sleep 5hrs sleep everyday
 
-
-
 ---
 
 # Assignment 7. Brain Dump + 5-Month System Plan
@@ -299,8 +297,7 @@ Answer:
 
 1. For bills, i am thinking of settling my rent next month.
 2. I will be getting married this month and it's something to worry about the expenses and preparation.
-3. I am the first born, i carry the responsibility of taking care of my parent financially.
-4. I and my team have a project idea we are working on.
+3. I and my team have a project idea we are working on.
 
 ---
 
@@ -318,7 +315,12 @@ Example:
 
 #### My Weekly Routine
 
-1. 
+1. 20min exercise daily
+2. Commit 5hrs daily from Monday-Friday for assignments, projects, and documentation
+3. Saturday for DMI Session
+4. Sunday for Weekly Review
+5. 1hr everyday for reading a book for growth 
+6. Post one technical article weekly on LinkedIn and Medium blog
 
 ---
 
@@ -326,11 +328,11 @@ Example:
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+Monday - Friday from 8pm to 12am
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+I am going to attend 3 session per week. The important session on Saturday and two extra session in a week
 
 ---
 
@@ -344,7 +346,7 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
+I will spend more time studying and commit to the DMI program and less time on social medi and respond to only important messages and calls.
 
 ---
 
@@ -352,28 +354,38 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+The biggest insight I gained about myself this week is my growing eagerness to fully commit to the tasks and assignments given to me. I am beginning to develop a mindset centered on consistency, discipline, and intentional action. More importantly, I am starting to create a personal standard for myself, one that reflects the kind of person I want to become and helps rebrand me into a better version of myself.
+
+Another key insight is the importance of modelling the kind of person I aspire to be in the future which is my “Version 2.0.” This means not just dreaming about that future version of myself, but intentionally adopting the habits, mindset, and discipline that align with that identity right now.
+
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+One major weakness I noticed in myself is how easily I get distracted by social media on my phone. I also realized that I sometimes engage in unnecessary conversations that do not add value and end up wasting my time. These habits interrupt my focus, reduce my productivity, and make it harder for me to stay consistent with the goals and standards I am trying to build for myself.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+From this week, I will implement a **daily deep work system** to reduce distractions from social media and unnecessary conversations.
+
+**Exact habit:**
+Every weekday, from **8:00 AM to 10:00 AM**, I will put my phone on **Do Not Disturb** and keep it away from my work desk while I focus on one important task only. During this time, I will not check social media, reply to non-urgent messages, or engage in unnecessary conversations. If someone tries to start a distracting conversation, I will politely postpone it until after my work session.
+
+**Why this system matters:**
+This habit will help me protect my attention, use my time better, and build the discipline and consistency needed to become the person I want to be.
+
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
 
-`__________________________`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_what-my-version-20-will-look-like-seven-share-7477855386692411392-htfn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: https://www.linkedin.com/posts/micheal-omotosho-577230199_what-my-version-20-will-look-like-seven-share-7477855386692411392-htfn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg 
+- Blog / Medium : https://medium.com/@omotoshomicheal93/my-version-2-0-building-a-life-on-standards-systems-and-identity-c687ebba2cca 
 
 ---
 

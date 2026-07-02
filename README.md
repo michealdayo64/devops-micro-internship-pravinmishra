@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Micheal Omotosho |
+| **LinkedIn** | [micheal-omotosho-devops-engineer](linkedin.com/in/micheal-omotosho-577230199) |
+| **Location** | Lagos, Nigeria |
+| **Background** | Backend, Cloud / DevOps & Agentic AI |
+| **Goal** | To become a world-class backend and cloud/devops engineer who can design, build, deploy, secure, and scale reliable systems for real businesses. |
 
 ---
 
@@ -65,13 +65,13 @@ This is not a course. It is an internship-style program — real deployments, re
 
 ---
 
-**Your stack (uncomment each badge as you earn it):**
+**Your stack:**
 
 <!-- Week 00 → Internet & Networking Basics -->
 <!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
 
-<!-- Week 01 → Success Mindset -->
-<!-- [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
+Week 01 → Success Mindset
+[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
 
 <!-- Week 02 → Agentic AI with Claude Code -->
 <!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
@@ -112,7 +112,7 @@ This is not a course. It is an internship-style program — real deployments, re
 <!-- Week 14 → Final Project / Capstone -->
 <!-- [![Week 14 – Capstone](./badges/week-14.svg)](./week-14-final-project/) -->
 
-*Complete a week → uncomment the badge → watch your stack grow.*
+
 
 ---
 
@@ -133,8 +133,8 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_after-spending-the-last-6-months-learning-activity-7438048385485520896-2m9H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | — |
+| 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_what-my-version-20-will-look-like-seven-share-7477855386692411392-htfn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg  | https://medium.com/@omotoshomicheal93/my-version-2-0-building-a-life-on-standards-systems-and-identity-c687ebba2cca |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |

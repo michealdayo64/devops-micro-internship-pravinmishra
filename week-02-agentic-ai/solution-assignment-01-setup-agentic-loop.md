@@ -54,13 +54,13 @@ Interact with Claude Code and observe how it performs the Agentic Loop (Gather �
 
 #### Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
 
-Add your screenshot here.
+![paste file](screenshots/week-02-screenshot-04.png)
 
 ---
 
 #### Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
 
-Add your screenshot here.
+![paste file](screenshots/week-02-screenshot-05.png)
 
 ---
 
@@ -75,7 +75,7 @@ Add your screenshot here.
 
 ## GitHub Repository URL
 
-Paste your forked repository URL here:
+https://github.com/michealdayo64/devops-micro-internship-pravinmishra
 
 `__________________________`
 

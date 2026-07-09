@@ -20,7 +20,7 @@ Create the `.claude/agents/` directory and add all required agent files.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/agents/` with all 3 files
 
-Add your screenshot here.
+![paste file](screenshots/week-02-assignment-04-screenshot-01.png)
 
 ---
 
@@ -34,19 +34,19 @@ Analyze the configuration differences between the three agents and demonstrate u
 
 #### 1. Why does the cost optimizer use Haiku instead of Sonnet?
 
-Add your answer here...
+Because Haiku is the cheapest and fastest model, while Sonnet is the general-purpose coding workhorse. So a cost optimizer will often route subagents to Haiku when the task looks “mechanical” rather than “reasoning-heavy.”
 
 ---
 
 #### 2. Why does the security auditor NOT have Write in its tools list?
 
-Add your answer here...
+Because the security auditor is meant to audit, not modify. Read-only tools are enough. Usually Read, Grep, Glob, and sometimes Bash for things like git diff, dependency inspection, or running safe checks are all what the tools needed.
 
 ---
 
 #### 3. Why does the tf-writer use `inherit` instead of a specific model?
 
-Add your answer here...
+tf-writer uses inherit because Terraform-writing is usually treated as an implementation task that should match the parent agent’s model quality, context, and reasoning level, rather than being locked to a cheaper or fixed model.
 
 ---
 
@@ -54,13 +54,13 @@ Add your answer here...
 
 #### Screenshot 2 — `security-auditor.md` frontmatter showing model and tools configuration
 
-Add your screenshot here.
+![paste file](screenshots/week-02-assignment-04-screenshot-02.png)
 
 ---
 
 #### Screenshot 3 — `cost-optimizer.md` frontmatter showing the model and tools configuration
 
-Add your screenshot here.
+![paste file](screenshots/week-02-assignment-04-screenshot-03.png)
 
 ---
 
@@ -74,13 +74,13 @@ Trigger the security auditor agent and analyze the generated security report for
 
 #### Screenshot 4 — The delegation message showing Claude launched the security-auditor
 
-Add your screenshot here.
+![paste file](screenshots/week-02-assignment-04-screenshot-04.png)
 
 ---
 
 #### Screenshot 5 — Security audit report output
 
-Add your screenshot here.
+![paste file](screenshots/week-02-assignment-04-screenshot-05.png)
 
 ---
 
@@ -94,7 +94,7 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 #### Screenshot 6 — The full cost optimization report
 
-Add your screenshot here.
+![paste file](screenshots/week-02-assignment-04-screenshot-06.png)
 
 ---
 
@@ -110,7 +110,7 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+https://github.com/michealdayo64/devops-micro-internship-pravinmishra
 
 ---
 

@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-![paste file](screenshots/medium.PNG)
+![paste file](screenshots/Medium.PNG)
 
 ---
 

@@ -251,19 +251,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-03-screenshot-19.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-03-screenshot-20.png)
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-03-screenshot-21.png)
 
 ---
 
@@ -299,13 +299,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-03-screenshot-22.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-03-screenshot-23.png)
 
 ---
 

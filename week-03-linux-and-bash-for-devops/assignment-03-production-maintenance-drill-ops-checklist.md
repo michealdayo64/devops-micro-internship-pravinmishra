@@ -48,19 +48,19 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-Write your answer here.
+It means nginx is listening on all IP addresses on port 80, allowing it to accept http request from any reachable IP addresses
 
 ---
 
 **2. What proves SSH is active on port 22?**
 
-Write your answer here.
+SSH is active on port 22 if the SSH service is listening on port 22 and accepting incoming SSH connections. This can be verified using commands such as "ss -tulnp | grep :22" or by successfully connecting with ssh user@server.
 
 ---
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
+No, I did not find any unexpected open ports. Based on the output of sudo ss -tulnp, the only externally open ports are SSH (port 22) and Nginx (port 80), which are expected. Other listening services, such as chronyd (time synchronization) and systemd-resolved (DNS resolution), are bound only to loopback addresses (127.0.0.1, 127.0.0.53, and 127.0.0.54), meaning they are accessible only from within the server.
 
 ---
 
@@ -96,13 +96,13 @@ Answer the following in your own words:
 
 **1. What happens if Nginx fails to restart in production?**
 
-Write your answer here.
+If Nginx fails to restart in production, the website or application it serves becomes unavailable/unreachable. Users will not be able to access the site and may receive a connection refused or connection timeout.
 
 ---
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
+Before initiating a rollback, I would first verify the Nginx configuration and service status using nginx -t and sudo systemctl status nginx --no-pager. This helps identify configuration or service errors before attempting a restart. If the failure is caused by a misconfiguration, I would restore the previous known working Nginx configuration or deployment, validate it again with nginx -t, and then restart the Nginx service. Finally, I would ensure the Nginx service is enabled using systemctl enable nginx so that it starts automatically whenever the virtual machine is rebooted.
 
 ---
 
@@ -141,13 +141,14 @@ Answer the following in your own words:
 - If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
 - If no, explain what it means if the error log is empty or shows no recent errors during your check.
 
-Write your answer here.
+No errors were detected in either the Nginx error log or the journalctl output. The Nginx error log was empty, indicating no recorded errors, while the journalctl logs showed only successful service events, including Started, Stopped, Reloaded, and Deactivated successfully**, with no indications of failures or abnormal exits.
+
 
 ---
 
 **2. If there were no errors, what does that indicate about the system?**
 
-Write your answer here.
+It indicates te
 
 ---
 

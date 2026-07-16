@@ -54,7 +54,11 @@ You can publish your blog on:
 
 Blog Link:
 
+<<<<<<< HEAD
 https://medium.com/@omotoshomicheal93/my-week-2-reflection-blog-for-agentic-ai-with-devops-ddef122248ab?sharedUserId=omotoshomicheal93
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 
@@ -141,7 +145,11 @@ P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by 
 
 ### LinkedIn Post Link:
 
+<<<<<<< HEAD
 https://www.linkedin.com/posts/micheal-omotosho-577230199_dmibypravinmishra-agenticai-claudecode-ugcPost-7481508737376247808-IVdr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 

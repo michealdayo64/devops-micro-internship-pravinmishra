@@ -98,7 +98,11 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
+<<<<<<< HEAD
 https://github.com/michealdayo64/devops-micro-internship-pravinmishra
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 

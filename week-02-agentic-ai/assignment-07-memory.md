@@ -97,7 +97,11 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 Paste your Linkedin post link here:
 
+<<<<<<< HEAD
 https://www.linkedin.com/posts/micheal-omotosho-577230199_dmibypravinmishra-agenticai-claudecode-ugcPost-7481342684591288320-EXcb/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 
@@ -105,7 +109,11 @@ https://www.linkedin.com/posts/micheal-omotosho-577230199_dmibypravinmishra-agen
 
 Paste your forked repository URL here:
 
+<<<<<<< HEAD
 https://github.com/michealdayo64/devops-micro-internship-pravinmishra
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 

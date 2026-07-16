@@ -94,13 +94,21 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 Paste your forked repository URL here:
 
+<<<<<<< HEAD
 https://github.com/michealdayo64/devops-micro-internship-pravinmishra
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ## LinkedIn post URL
 
 Paste your forked repository URL here:
 
+<<<<<<< HEAD
 https://www.linkedin.com/posts/micheal-omotosho-577230199_dmibypravinmishra-agenticai-claudecode-ugcPost-7481146229138173952-oCyp/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 ---
 
 # Completion Checklist

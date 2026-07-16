@@ -148,13 +148,14 @@ No errors were detected in either the Nginx error log or the journalctl output. 
 
 **2. If there were no errors, what does that indicate about the system?**
 
-It indicates te
+It indicates that the system is operating normally. It suggests there are no configuration issues, service failures, or internal errors recorded at the time the logs were checked. Additionally, the successful service status entries confirm that Nginx and the related system services are running as expected.
 
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-Write your answer here.
+Yes, my curl requests were visible in the Nginx access logs. This confirms that the requests successfully reached the Nginx web server and were processed correctly. The HTTP status code **200 (OK)** indicates that the GET request was successfully handled and the requested resource was served without errors. The access log also records the client's IP address, client's browser, request method, response status, and other details, confirming that traffic is flowing correctly from the client to the Nginx server and back to the client.
+
 
 ---
 
@@ -196,13 +197,13 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Write your answer here.
+None of the resources appear to be under critical pressure at the time of assessment. The CPU is largely idle, indicating a low processing load. Memory utilization is healthy, with sufficient available capacity and no swap usage, suggesting there is no memory pressure. Disk usage is approximately 59%, which is within a safe operating range and leaves adequate free space for normal system operations. Overall, the server appears to have sufficient CPU, memory, and disk resources to operate efficiently.
 
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
 
-Write your answer here.
+If the disk becomes 100% full on a production server, it can lead to serious operational issues. Log files may no longer be able to record new entries, making it difficult to troubleshoot problems during an active incident. Applications, package managers, and build tools that rely on temporary storage may fail or crash because they cannot create or write temporary files. If a database is running on the server, it may refuse write operations or, in severe cases, risk data corruption. When disk space is completely exhausted, the operating system itself can become unstable, and essential tasks such as creating new files, writing system logs, or even logging in via SSH—may fail due to the lack of available storage.
 
 ---
 
@@ -238,7 +239,7 @@ Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
 
-Write your answer here.
+The correctness of the deployment was verified through a series of validation checks rather than a single command. First, ls -lah /var/www/html confirmed that the expected Create React App production build files, including index.html and the static/ directory, were present and owned by www-data, the user under which Nginx runs. Next, grep -R "Deployed by" verified that the unique deployment identifier was embedded in the compiled JavaScript bundle and matched the original source, confirming that the intended build—not a stale or cached version—was deployed. The Nginx configuration was then validated by confirming the presence of the try_files directive, ensuring that all unmatched routes correctly fall back to index.html for proper single-page application (SPA) routing. Finally, a curl request to the live server returned the same index.html content being served by Nginx, confirming that the deployed files on disk matched the content delivered to end users. Together, these checks verified that the correct version of the application was successfully deployed and served in the production environment.
 
 ---
 
@@ -274,19 +275,24 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
+The configuration failure was caused by a syntax error in the Nginx configuration file located at `/etc/nginx/sites-available/default`. Specifically, I intentionally removed the semicolon (`;`) from the `try_files $uri /index.html;` directive as instructed. This caused Nginx to fail parsing the configuration correctly, resulting in a configuration syntax error that prevented the service from reloading or restarting until the error was corrected.
+
 
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
+To fix the issue, I reopened the Nginx configuration file and restored the missing semicolons in the affected directives. I then ran `sudo nginx -t` to validate the configuration and ensure the syntax was correct before restarting the service. After receiving the **"syntax is ok"** and **"test is successful"** messages, I restarted Nginx using `sudo systemctl restart nginx`. Finally, I verified that the application was serving traffic correctly by performing an external `curl -I` request, which confirmed that the website was accessible again.
+
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Write your answer here.
+This type of issue can be avoided by following a robust deployment validation process. Before deploying any configuration changes, I would carefully review the Nginx configuration for syntax errors and run `sudo nginx -t` to verify that the configuration is valid. Only after the configuration test passes would I reload or restart the Nginx service. After the restart, I would perform an HTTP health check, such as `curl -I`, to confirm that the application is responding with a **200 OK** status and is accessible to users.
+
+To further reduce the risk of configuration failures in production, I would always run `nginx -t` after every configuration change without exception, maintain all Nginx configuration files in version control (Git) so changes can be quickly rolled back if necessary, and test configuration updates in a staging environment before deploying them to production. Where possible, I would also automate configuration validation as part of the CI/CD pipeline, ensuring that invalid configurations are detected during continuous integration and never reach the live production server.
+
 
 ---
 
@@ -316,7 +322,8 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
+The application broke because all deployment files were removed from the web root directory (`/var/www/html`), which is the location from which Nginx serves the application. Although Nginx itself remained running and its configuration was still valid, the required application files, including `index.html` and the compiled React assets, were no longer available. As a result, Nginx was unable to serve the application and returned a **500 Internal Server Error** because the configured fallback file could not be found.
+
 
 ---
 

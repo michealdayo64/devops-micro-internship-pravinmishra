@@ -74,7 +74,7 @@ Week 01 → Success Mindset
 [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
 
 <!-- Week 02 → Agentic AI with Claude Code -->
-<!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
+[![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/)
 
 <!-- Week 03 → Linux & Bash for DevOps -->
 <!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
@@ -132,8 +132,8 @@ Week 01 → Success Mindset
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_after-spending-the-last-6-months-learning-activity-7438048385485520896-2m9H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | — |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_what-my-version-20-will-look-like-seven-share-7477855386692411392-htfn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg  | https://medium.com/@omotoshomicheal93/my-version-2-0-building-a-life-on-standards-systems-and-identity-c687ebba2cca |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_dmibypravinmishra-agenticai-claudecode-ugcPost-7481508737376247808-IVdr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/my-week-2-reflection-blog-for-agentic-ai-with-devops-ddef122248ab?sharedUserId=omotoshomicheal93 |
+| 03 | Linux & Bash for DevOps | ⬜ Started | 🔄 In Progress | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |

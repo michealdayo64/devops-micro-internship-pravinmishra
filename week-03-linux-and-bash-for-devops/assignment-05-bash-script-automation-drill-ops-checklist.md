@@ -20,13 +20,19 @@ Verify that Bash is available on your system and create a clean workspace for th
 
 #### Screenshot 1 — Output of `echo $SHELL` and `bash --version`
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-05-screenshot-1.png)
+
+
+![paste file](screenshots/week-03-assignment-05-screenshot-2.png)
 
 ---
 
 #### Screenshot 2 — Output of `pwd` and `ls -lah` showing the scripts directory
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-05-screenshot-3.png)
+
+
+![paste file](screenshots/week-03-assignment-05-screenshot-4.png)
 
 ---
 
@@ -36,19 +42,19 @@ Answer the following in your own words:
 
 **1. What is Bash?**
 
-Add your answer here.
+Bash (Bourne Again SHell) is a command-line shell and scripting language used to interact with the operating system, execute commands, manage files, and automate tasks through shell scripts.
 
 ---
 
 **2. What is the difference between shell and Bash?**
 
-Add your answer here.
+A shell is a command line interpreter that allow users interact with the operating system. While bash is a specific kind of shell. There are other kinds of shell like zh, zsh.
 
 ---
 
 **3. Why is it important to confirm the Bash version before writing scripts?**
 
-Add your answer here.
+Confirming the Bash version before writing or running scripts is important because different versions of Bash support different features. A script that works perfectly on one system may fail on another if the installed Bash version is older or different.
 
 ---
 
@@ -62,19 +68,19 @@ Create your first Bash script, make it executable, and run it from the terminal.
 
 #### Screenshot 1 — Content of `first-script.sh`
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-05-screenshot-5.png)
 
 ---
 
 #### Screenshot 2 — Output of `./first-script.sh`
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-05-screenshot-6.png)
 
 ---
 
 #### Screenshot 3 — Output of `ls -l first-script.sh` showing executable permission
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-05-screenshot-7.png)
 
 ---
 
@@ -84,19 +90,20 @@ Answer the following in your own words:
 
 **1. What is the purpose of `#!/bin/bash`?**
 
-Add your answer here.
+It is called a shebang (or hashbang). Its purpose is to tell the operating system which interpreter should execute the script.
 
 ---
 
 **2. Why do we use `chmod +x` before running a script?**
 
-Add your answer here.
+We use chmod +x to give a script execute permission, making it an executable file so it can be run directly from the command line.
 
 ---
 
 **3. What is the difference between running a script using `./script.sh` and `bash script.sh`?**
 
-Add your answer here.
+./script.sh: Runs the script as an executable file, requires execute permission, and uses the interpreter specified by the shebang.
+bash script.sh: Runs the script with the Bash interpreter directly, does not require execute permission, and ignores the shebang because you've already chosen the interpreter.
 
 ---
 
@@ -110,13 +117,13 @@ Use variables to store and display user-related information.
 
 #### Screenshot 1 — Content of `user-info.sh`
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-05-screenshot-8.png)
 
 ---
 
 #### Screenshot 2 — Output of `./user-info.sh`
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-05-screenshot-9.png)
 
 ---
 
@@ -126,7 +133,7 @@ Answer the following in your own words:
 
 **1. What is a variable in Bash?**
 
-Add your answer here.
+A variable in Bash is a named placeholder used to store a value that can be referenced and used later in a script or command.
 
 ---
 

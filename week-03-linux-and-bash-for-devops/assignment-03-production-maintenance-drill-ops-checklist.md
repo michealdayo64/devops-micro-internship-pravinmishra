@@ -329,13 +329,20 @@ The application broke because all deployment files were removed from the web roo
 
 **2. How did you fix the issue and restore the application?**
 
-Write your answer here.
+The application was restored by using the backup that had been created before the deployment. Instead of deleting the original application files, they had been safely moved to an html_backup directory, making recovery straightforward.
+The recovery process involved removing the empty, incorrectly deployed directory and moving the backed-up application back to its original location. Once the files were restored, Nginx was restarted to ensure it was serving content from the correct directory.
+To verify that the restoration was successful, an external curl -I request was performed. The server responded with HTTP 200 OK
 
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
+To prevent this type of issue in a real production environment, I would implement the following best practices:
+
+1. Automated pre-deployment backups: Before every release, automatically create a backup of the current production version. This enables an immediate rollback without requiring manual intervention if the deployment fails.
+2. Atomic deployments: Deploy each release to a separate, versioned directory (for example, /var/www/releases/<timestamp>) and atomically switch a symbolic link (such as /var/www/current) to point to the new release. This avoids overwriting the live directory in place, ensuring users are never served an empty or partially deployed application.
+3. CI/CD deployment validation: Incorporate automated validation steps into the CI/CD pipeline to verify that critical application files (such as index.html) exist, are non-empty, and that the build artifacts have been deployed successfully before the deployment is marked as complete.
+4. Automated health checks and monitoring: Perform post-deployment health checks that confirm the application is responding with a healthy HTTP 200 OK status and that key endpoints are functioning correctly. Combined with monitoring and alerting, this ensures deployment issues are detected within seconds rather than being discovered manually.
 
 ---
 
@@ -351,31 +358,47 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+SSH key-based authentication is more secure than password-based authentication because it uses a cryptographic key pair consisting of a private key and a public key. The public key is stored on the server, while the private key remains securely on the user's device and is never transmitted over the network.
+
+Unlike passwords, which can be guessed, reused, or intercepted through brute-force or phishing attacks, SSH private keys are extremely difficult to compromise due to their strong cryptographic nature. Authentication is performed using a cryptographic challenge-response process rather than sending a password to the server.
+
+Additionally, SSH keys eliminate the need to share or manually enter passwords when connecting to a server. The private key remains known only to the user, making unauthorized access significantly more difficult. For even greater security, the private key itself can be protected with a passphrase, adding an extra layer of protection if the key file is ever stolen.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Only the ports required for the application or service should be open on a production server to minimize the server's attack surface. Every open port exposes a network service that could potentially be exploited if it contains a vulnerability or is misconfigured.
+
+By closing unnecessary ports, you reduce the number of entry points available to attackers, making unauthorized access and network-based attacks much more difficult. For example, a web server may only need ports 80 (HTTP) and 443 (HTTPS) open to the public, while administrative services such as SSH (port 22) should be restricted to trusted IP addresses or accessed through a VPN.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+It is important for Nginx to be enabled on boot so that it starts automatically whenever the server is restarted or rebooted. This ensures the web application or website becomes available immediately without requiring manual intervention from an administrator.
+If Nginx is not enabled on boot, the server may come back online after a reboot, but the web service will remain unavailable until someone manually starts Nginx. This can lead to unnecessary downtime, failed health checks, and a poor user experience.
+
+Enabling Nginx to start automatically improves the reliability and availability of the application, which is essential for production systems where continuous uptime is expected.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+The risks include:
+
+* Unauthorized access: Attackers can log in to servers, databases, or cloud accounts using the exposed credentials.
+Data breaches: Sensitive customer or business data may be stolen, modified, or deleted.
+
+* Service disruption: Malicious users could alter configurations, stop services, or deploy malicious code, leading to downtime.
+Financial loss: Exposed cloud credentials can be used to create resources, mine cryptocurrency, or incur unexpected infrastructure costs.
+* Reputation damage: Security incidents caused by leaked credentials can erode customer trust and harm an organization's reputation.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
+Cloud resources should be stopped or terminated when they are no longer needed to avoid unnecessary costs and improve resource management. Running resources such as virtual machines, databases, or load balancers continue to incur charges even if they are not actively being used. While stopping a virtual machine may eliminate compute charges, you may still be billed for attached storage volumes, static IP addresses, snapshots, or other associated resources. Terminating resources that are no longer required helps eliminate these unnecessary costs.
 
 ---
 
@@ -387,13 +410,13 @@ Write your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-cloudcomputing-linux-ugcPost-7484070282148737025-VU5f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/linkedin1.png)
 
 ---
 

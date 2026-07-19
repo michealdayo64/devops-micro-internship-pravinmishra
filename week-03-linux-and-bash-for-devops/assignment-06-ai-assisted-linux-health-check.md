@@ -266,13 +266,15 @@ Turn the Bash script into a reusable, manually invoked Agentic AI workflow.
 
 #### Screenshot 11 — `SKILL.md` showing the frontmatter, allowed tool restrictions, and safety rules
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-18.PNG)
 
 ---
 
 #### Screenshot 12 — `/linux-triage` output for the healthy server
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-19.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-20.PNG)
 
 ---
 
@@ -282,25 +284,25 @@ Answer the following in your own words:
 
 **1. Why does this skill have Bash, Read, and Grep, but not Write?**
 
-Add your answer here.
+The skill includes Bash to execute the Linux triage script, Read to view the generated report, and Grep to search for specific PASS, WARN, or FAIL results. It does not include the Write tool because Claude's role is limited to running diagnostics and analyzing results, not creating or modifying project files.
 
 ---
 
 **2. Why is `disable-model-invocation: true` useful for this skill?**
 
-Add your answer here.
+The disable-model-invocation: true setting prevents Claude from automatically invoking the skill. This requires the user to run /linux-triage manually, ensuring that server inspections and diagnostic actions remain under human control and are only performed when intentionally requested.
 
 ---
 
 **3. What part is performed by Bash, and what part is performed by Claude?**
 
-Add your answer here.
+Bash performs the automated system checks by verifying the Nginx service, port 80, the HTTP response, disk usage, available memory, and recent logs, then records the results in linux-health-report.txt. Claude reads and analyzes the report, explains the findings, identifies any warnings or failures, and recommends appropriate recovery steps. However, Claude does not execute the recovery action; that decision and action remain the responsibility of the user.
 
 ---
 
 **4. Why is this better than asking Claude "Is my server healthy?" without giving it evidence?**
 
-Add your answer here.
+This approach is better because it provides Claude with real, up-to-date evidence from the server rather than relying on assumptions. The /linux-triage skill first collects diagnostic data using the Bash script, and Claude then analyzes the Nginx status, port 80, HTTP response, disk usage, memory, and logs to give an accurate, evidence-based assessment of the server's health.
 
 ---
 
@@ -314,19 +316,23 @@ Create a controlled service failure, gather evidence through Bash, and let Claud
 
 #### Screenshot 13 — Output showing Nginx is inactive and the HTTP request fails
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-21.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-22.PNG)
 
 ---
 
 #### Screenshot 14 — `/linux-triage` output showing failed evidence, most likely cause, and a suggested recovery command
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-23.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-24.PNG)
 
 ---
 
 #### Screenshot 15 — `incident-failure-report.txt` showing the failed checks and your Full Name
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-25.PNG)
 
 ---
 
@@ -336,31 +342,33 @@ Answer the following in your own words:
 
 **1. Which three checks failed?**
 
-Add your answer here.
+The three failed checks were the Nginx service check, the port 80 listening check, and the local HTTP response check. The disk usage and available memory checks continued to pass because they were not affected by stopping the Nginx service.
 
 ---
 
 **2. What evidence supports the conclusion that Nginx is unavailable?**
 
-Add your answer here.
+The evidence showing that Nginx is unavailable is that the report indicates Nginx is not active, port 80 is not listening, and the local HTTP request returned status 000. Together, these results confirm that the web server is not running and the application is unable to receive or respond to HTTP traffic.
 
 ---
 
 **3. Did Claude execute the recovery command? Why is that important?**
 
-Add your answer here.
+No, Claude did not execute the recovery command; it only recommended it. This is important because a human must review the evidence and approve any changes before they are applied to the server. Keeping recovery actions under human control helps prevent unintended or unsafe changes during an incident.
 
 ---
 
 **4. Which phase of the Agentic Loop is represented by the Bash report?**
 
-Add your answer here.
+Which phase of the Agentic Loop is represented by the Bash report?
+The Bash report represents the Gather phase. The script collects current evidence about Nginx, port 80, the HTTP response, disk usage, memory, and recent logs.
+
 
 ---
 
 **5. Which phase is represented by Claude's explanation?**
 
-Add your answer here.
+Claude’s explanation represents the Analyze phase. During this phase, Claude reviews the collected evidence, identifies the failed health checks, explains the likely cause of the issue, and recommends an appropriate recovery command for human review and approval.
 
 ---
 
@@ -374,25 +382,29 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 16 — Output showing Nginx is active and `curl -I http://localhost` returns 200 OK
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-26.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-27.PNG)
 
 ---
 
 #### Screenshot 17 — Second `/linux-triage` output showing successful recovery with no FAIL results
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-28.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-29.PNG)
 
 ---
 
 #### Screenshot 18 — Output of `ls -lah reports` showing both `incident-failure-report.txt` and `recovery-report.txt`
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-30.PNG)
 
 ---
 
 #### Screenshot 19 — `incident-summary.md` showing all required sections and your Full Name
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-31.PNG)
 
 ---
 
@@ -402,31 +414,33 @@ Answer the following in your own words:
 
 **1. What action did you execute manually?**
 
-Add your answer here.
+After reviewing the evidence and Claude’s recommendation, I manually executed the following command:
+`sudo systemctl start nginx`
+This command restarted the Nginx service, restoring the web server so it could begin serving HTTP traffic again.
 
 ---
 
 **2. What evidence proves that the service recovered?**
 
-Add your answer here.
+The evidence proving that the service recovered is that systemctl is-active nginx returned active, the local HTTP request returned HTTP/1.1 200 OK, and the second /linux-triage report showed that the Nginx service, port 80, and HTTP response checks all passed successfully.
 
 ---
 
 **3. Why is the second triage run necessary?**
 
-Add your answer here.
+The second triage run is necessary to verify that the recovery was successful. Restarting Nginx alone does not confirm that the entire application is healthy. Running the triage script again rechecks the Nginx service, port 80, HTTP response, disk usage, and available memory to ensure the server has fully returned to a healthy state.
 
 ---
 
 **4. What could go wrong if an AI agent automatically restarted every failed service?**
 
-Add your answer here.
+If an AI agent automatically restarted every failed service, it could hide the underlying cause of the failure, trigger repeated restart loops, or worsen the incident if the problem is related to configuration, dependencies, or system resources. Reviewing the evidence before taking action ensures that recovery is safe and appropriate.
 
 ---
 
 **5. In one sentence, explain the difference between using AI as a chatbot and using AI in this agentic workflow.**
 
-Add your answer here.
+A chatbot simply answers questions, whereas in an agentic workflow, AI uses tools to gather and analyze real system evidence, then recommends actions that a human reviews and executes.
 
 ---
 

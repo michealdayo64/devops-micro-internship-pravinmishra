@@ -61,7 +61,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+The internet uses packet switching to send data by breaking it into small packets that can travel different routes before being reassembled at their destination. Each device connected to a network has a unique IP address, which identifies where the packets should be sent and received. The TCP/IP protocol suite manages this communication: IP handles the addressing and routing of packets, while TCP ensures they arrive correctly, in order, and without missing data. When you visit a website, your browser uses HTTP (Hypertext Transfer Protocol) to request and receive web pages. Most modern websites use HTTPS, the secure version of HTTP, which encrypts data using SSL/TLS to protect sensitive information such as passwords and payment details during transmission.
 
 ---
 

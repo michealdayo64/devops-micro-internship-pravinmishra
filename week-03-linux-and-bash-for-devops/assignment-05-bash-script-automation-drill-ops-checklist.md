@@ -441,13 +441,13 @@ It uses if-else conditionals with -d and -f to check the required directory and 
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-linux-bash-ugcPost-7484317553708695553-gD4i/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/linkedin3.jpg)
 
 ---
 

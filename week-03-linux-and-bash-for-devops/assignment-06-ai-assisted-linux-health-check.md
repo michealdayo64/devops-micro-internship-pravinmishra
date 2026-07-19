@@ -66,7 +66,7 @@ Tell Claude exactly what this project does and what it is not allowed to do.
 
 #### Screenshot 3 — CLAUDE.md open in VS Code showing all four sections (Project Overview, Incident Workflow, Safety Rules, Output Rules)
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-5.PNG)
 
 ---
 
@@ -76,19 +76,19 @@ Answer the following in your own words:
 
 **1. Why should Claude receive project-specific operational rules?**
 
-Add your answer here.
+Claude should receive project-specific operational rules so it understands the project's purpose, follows the correct procedures, and avoids actions that could cause problems. This ensures its responses align with the project's incident workflow and remain accurate, consistent, and safe.
 
 ---
 
 **2. Why is the human required to execute the recovery command?**
 
-Add your answer here.
+The human is required to execute the recovery command because they are responsible for verifying that it is safe and appropriate. Claude can suggest recovery steps, but only a human should make changes to the server to prevent unintended actions or mistakes.
 
 ---
 
 **3. Which rule prevents Claude from making an unsupported diagnosis?**
 
-Add your answer here.
+The rule, “Do not claim a root cause unless the report contains supporting evidence,” prevents Claude from making an unsupported diagnosis. It ensures that conclusions are based only on verified evidence from the report, not assumptions or guesses.
 
 ---
 
@@ -102,7 +102,11 @@ Use Claude Code to inspect the environment and produce a read-only plan before c
 
 #### Screenshot 4 — Claude Code showing the five-check plan and read-only inspection results
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-6.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-7.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-8.PNG)
 
 ---
 
@@ -112,19 +116,19 @@ Answer the following in your own words:
 
 **1. Which part of this task represents the Gather phase?**
 
-Add your answer here.
+The Gather phase is the read-only inspection of the Ubuntu server. During this phase, Claude collects information about Nginx, port 80, the HTTP response, disk usage, and available memory using read-only commands without making any changes to the system.
 
 ---
 
 **2. Did Claude follow the instruction not to create files? How did you verify this?**
 
-Add your answer here.
+Yes, Claude followed the instruction not to create files. I verified this by checking the workspace and confirming that no new files, such as Bash scripts or other artifacts, were created. Claude only performed read-only inspection commands.
 
 ---
 
 **3. Why is planning before coding useful in DevOps automation?**
 
-Add your answer here.
+Planning before coding is useful in DevOps automation because it defines the script's objectives, identifies the checks to perform, and ensures safe, efficient execution. It also helps detect potential issues early, reducing errors and unnecessary changes during implementation.
 
 ---
 
@@ -138,25 +142,31 @@ Create one Bash script that gathers consistent Linux and Nginx health evidence.
 
 #### Screenshot 5 — Top section of `linux-triage.sh` showing variables, thresholds, and the checks array
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-9.PNG)
 
 ---
 
 #### Screenshot 6 — Middle section showing check functions and conditionals
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-10.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-11.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-12.PNG)
 
 ---
 
 #### Screenshot 7 — Bottom section showing the loop, summary function, and exit behavior
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-13.PNG)
 
 ---
 
 #### Screenshot 8 — Output of `bash -n scripts/linux-triage.sh` (no syntax errors) and `ls -l scripts/linux-triage.sh` showing executable permission
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-14.PNG)
+
+![paste file](screenshots/week-03-assignment-06-screenshot-15.PNG)
 
 ---
 
@@ -166,31 +176,31 @@ Answer the following in your own words:
 
 **1. What is stored in the checks array?**
 
-Add your answer here.
+The checks array stores the names of the five diagnostic functions used to verify the system's health. These functions check the Nginx service, port 80, the HTTP response, disk usage, and available memory.
 
 ---
 
 **2. How does the `for` loop use that array?**
 
-Add your answer here.
+The for loop iterates through each function name stored in the checks array and executes the corresponding function one by one. This ensures that all five health checks are performed automatically in the specified order.
 
 ---
 
 **3. Why are the health checks separated into functions?**
 
-Add your answer here.
+The health checks are separated into functions so that each function performs one specific task. This makes the script easier to read, maintain, test, and troubleshoot, since changes to one check do not affect the others.
 
 ---
 
 **4. What is the purpose of `$(...)` in this script?**
 
-Add your answer here.
+$(...) is used for command substitution. It executes a command and stores its output so it can be assigned to a variable or used within another command. In this script, it captures values such as the timestamp, hostname, HTTP status code, disk usage, available memory, and recent Nginx logs.
 
 ---
 
 **5. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?**
 
-Add your answer here.
+The script uses different exit codes to indicate the overall health status of the Ubuntu server after completing all five health checks. This allows users and automation tools to determine the result without reading the full report: exit code 0 means all checks passed (HEALTHY), 1 indicates a warning (WARN), and 2 indicates that one or more checks failed (FAIL). This makes it easier to automate monitoring and respond appropriately based on the severity of the issue.
 
 ---
 
@@ -204,13 +214,13 @@ Run the Bash script against the healthy server and verify that it creates a repo
 
 #### Screenshot 9 — Output of `./scripts/linux-triage.sh` showing your Full Name and all five check results
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-16.PNG)
 
 ---
 
 #### Screenshot 10 — Output showing the captured exit code and final summary
 
-Add your screenshot here.
+![paste file](screenshots/week-03-assignment-06-screenshot-17.PNG)
 
 ---
 
@@ -220,25 +230,29 @@ Answer the following in your own words:
 
 **1. What is the overall status of your healthy baseline?**
 
-Add your answer here.
+The overall status of my healthy baseline is HEALTHY. All health checks passed successfully, with no failed checks detected, indicating that the system is operating normally and is ready for the incident simulation.
 
 ---
 
 **2. Which exact Linux evidence proves the application is serving traffic?**
 
-Add your answer here.
+The Linux evidence proving the application is serving traffic is:
+[PASS] Port 80 is listening — This confirms the server is accepting HTTP connections on port 80.
+[PASS] Local HTTP check returned status 200 — This confirms the application is responding successfully to HTTP requests.
 
 ---
 
 **3. Did your script return exit code 0 or 1? Explain why.**
 
-Add your answer here.
+My script returned exit code 0 because all five health checks passed successfully. Nginx was running, port 80 was listening, the application returned an HTTP 200 response, and both disk usage and available memory were within the defined healthy thresholds. This indicates the system was in a HEALTHY state.
 
 ---
 
 **4. What is the difference between a warning and a failure in this script?**
 
-Add your answer here.
+A warning indicates that the server and application are still functioning, but a resource threshold requires attention. In this script, warnings occur when root disk usage is between 80% and 89% or available memory falls below 100 MB.
+
+A failure indicates that a critical health check has failed and may affect the application's availability. Failures occur when Nginx is inactive, port 80 is not listening, the application does not return an HTTP 200 response, or root disk usage reaches 90% or higher.
 
 ---
 

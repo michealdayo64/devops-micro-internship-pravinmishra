@@ -27,6 +27,8 @@ Save your screenshot in the `screenshots` folder and update the file name below.
 
 ![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
 
+![Task 1 Screenshot](screenshots/task-2-chatgpt.png)
+
 
 Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
@@ -34,7 +36,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+I learned that a network protocol is a set of rules that enables devices to communicate and exchange data correctly over a network. I also learned that protocols can be understood through real-life examples, such as people using a common language to communicate effectively.
 
 ---
 

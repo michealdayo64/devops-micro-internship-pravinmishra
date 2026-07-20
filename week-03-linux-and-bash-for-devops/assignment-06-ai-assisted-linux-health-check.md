@@ -448,51 +448,66 @@ A chatbot simply answers questions, whereas in an agentic workflow, AI uses tool
 
 Fill in all seven sections below in your own words.
 
-**Full Name:** Add your full name here
+**Full Name:** Micheal Omotosho
 
-**Date:** DD/MM/YYYY
+**Date:** 20/07/2026
 
 ---
 
 **1. Reported Symptom**
 
-Add your answer here.
+The application became unavailable after the Nginx service stopped. The server was not accepting HTTP requests on port 80, and users could no longer access the web application.
 
 ---
 
 **2. Evidence Collected**
 
-Add your answer here.
+* systemctl is-active nginx showed that the Nginx service was inactive.
+* The port 80 listening check failed.
+* The local HTTP request returned status 000, indicating no response from the web server.
+* Disk usage and available memory remained within healthy thresholds.
+* The /linux-triage report identified failures in the Nginx service, port 80, and HTTP response checks.
 
 ---
 
 **3. Most Likely Cause**
 
-Add your answer here.
+Based on the collected evidence, the most likely cause was that the Nginx service had stopped, preventing the server from listening on port 80 and serving HTTP traffic. No evidence suggested that disk space or memory shortages caused the incident.
 
 ---
 
 **4. Human-Approved Recovery Action**
 
-Add your answer here.
+After reviewing the evidence and Claude's recommendation, I manually executed the following command:
+`sudo systemctl start nginx`
+This restarted the Nginx service and restored the web server.
 
 ---
 
 **5. Verification**
 
-Add your answer here.
+The recovery was verified by:
+
+* systemctl is-active nginx returning active.
+* The local HTTP request returning HTTP/1.1 200 OK.
+* A second /linux-triage run confirming that the Nginx service, port 80, and HTTP response checks all passed successfully.
+* The overall health status returned to HEALTHY (exit code 0).
 
 ---
 
 **6. Safety Decision**
 
-Add your answer here.
+Claude did not execute the recovery automatically. It only analyzed the collected evidence and recommended a recovery command. I reviewed the recommendation and manually approved and executed the recovery action, ensuring that server changes remained under human control and preventing unsafe automated modifications.
 
 ---
 
 **7. Agentic Loop Mapping**
 
-Add your answer here.
+1. Plan: Defined the health checks, incident workflow, and operational rules before creating the Linux triage script.
+2. Gather: The Bash script collected server evidence by checking the Nginx service, port 80, HTTP response, disk usage, available memory, and recent logs.
+3. Analyze: Claude read the generated report, identified the failed health checks, explained the likely cause based on the evidence, and recommended a recovery command.
+4. Act: After reviewing Claude's recommendation, I manually executed sudo systemctl start nginx to restart the Nginx service.
+5. Verify: I ran the /linux-triage script again to confirm that Nginx was active, port 80 was listening, the HTTP request returned 200 OK, and the overall system status was HEALTHY (exit code 0).
 
 ---
 
@@ -504,13 +519,14 @@ Add your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-linux-bash-share-7485043430948016128-5cTN/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/linkedin3.PNG)
+
 
 ---
 
@@ -518,7 +534,7 @@ Add your screenshot here.
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add your URL here`
+https://github.com/michealdayo64/devops-micro-internship-pravinmishra.git
 
 ---
 

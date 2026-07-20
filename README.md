@@ -130,7 +130,7 @@ Week 02 → Agentic AI with Claude Code
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_after-spending-the-last-6-months-learning-activity-7438048385485520896-2m9H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_after-spending-the-last-6-months-learning-activity-7438048385485520896-2m9H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/from-learning-cloud-theory-to-building-real-world-devops-skills-68514484dac9 |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_what-my-version-20-will-look-like-seven-share-7477855386692411392-htfn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg  | https://medium.com/@omotoshomicheal93/my-version-2-0-building-a-life-on-standards-systems-and-identity-c687ebba2cca |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_dmibypravinmishra-agenticai-claudecode-ugcPost-7481508737376247808-IVdr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/my-week-2-reflection-blog-for-agentic-ai-with-devops-ddef122248ab?sharedUserId=omotoshomicheal93 |
 | 03 | Linux & Bash for DevOps | 🔄 In Progress | 🔄 In Progress | — | — |

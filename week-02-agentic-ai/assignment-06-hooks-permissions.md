@@ -122,17 +122,19 @@ Prove the logging hook runs after a successful command execution and records Ter
 
 ![paste file](screenshots/week-02-assignment-06-screenshot-08.PNG)
 
-#### Screenshot 9 — `.claude/deploy.log` showing the logged command
+# Submission Instructions
+
+- Ensure `.claude/settings.json` is committed to your GitHub repository
+- Run both hook tests successfully and capture required screenshots
+- Push final changes to your forked repository
 
 ---
 
-# Submission Instructions
+## GitHub Repository URL
 
-Complete all tasks in sequence.
+Paste your forked repository URL here:
 
-Your submission must include:
-- All 9 required screenshots
-
+https://github.com/michealdayo64/Ultimate-Agentic-DevOps-with-Claude-Code.git
 ---
 
 # Completion Checklist

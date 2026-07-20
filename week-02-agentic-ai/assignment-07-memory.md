@@ -105,7 +105,7 @@ https://www.linkedin.com/posts/micheal-omotosho-577230199_dmibypravinmishra-agen
 
 Paste your forked repository URL here:
 
-https://github.com/michealdayo64/devops-micro-internship-pravinmishra
+https://github.com/michealdayo64/Ultimate-Agentic-DevOps-with-Claude-Code.git
 
 ---
 

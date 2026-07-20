@@ -75,9 +75,7 @@ Interact with Claude Code and observe how it performs the Agentic Loop (Gather â
 
 ## GitHub Repository URL
 
-https://github.com/michealdayo64/devops-micro-internship-pravinmishra
-
-`Add your URL here`
+https://github.com/michealdayo64/Ultimate-Agentic-DevOps-with-Claude-Code.git
 
 ---
 

@@ -144,7 +144,9 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+1. The Domain Name System (DNS) works like a phone book for the internet. Its main function is to translate or map IP addresses into domain names so that they are easier for humans to read and remember. For example, instead of remembering a numerical IP address, users can simply type a domain name like a website address in their browser. DNS servers handle this translation process. Every domain name is also connected to a domain registrar, which is the organization responsible for registering and managing that domain name.
+
+2. Which DNS record type should be used to connect the domain to the given IP and why: I will choose the A and CNAME Record Types. The reason for my answer is because the A Record type works very well with IPV4 network address. It maps a domain name to an IPV4 Address. For example  mikky.com -> 10.50.20.21. While the CNAME Record type is majorly use for alias of one domain name to another domain name. It also allows multiple domain names point to one host server.
 
 ---
 
@@ -211,7 +213,7 @@ Clearly structure your post into the following sections:
 
 Add the following credit note at the end of your post:
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://github.com/michealdayo64/devops-micro-internship-pravinmishra.git · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
 
 ---
 
@@ -220,7 +222,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-Add your URL here...
+https://www.linkedin.com/posts/micheal-omotosho-577230199_after-spending-the-last-6-months-learning-activity-7438048385485520896-2m9H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg	
 ```
 
 ---
@@ -229,7 +231,29 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+After spending the last 6 months learning Cloud Foundations and Cloud Architecture, I strongly believe that true growth comes from hands-on experience after learning the theory. Knowledge becomes more valuable when it is applied to real tasks and challenges.
+At this stage of my journey, I want to dedicate more time to practical learning and building real-world skills using cloud services. My long-term goal is to become a DevOps Engineer, and I believe this goal is achievable if I am selected as one of the 100 participants for the DevOps Micro-Internship (Cohort 3).
+Being part of this program will give me the opportunity to stay accountable, collaborate with like-minded individuals, and continuously improve my technical abilities. These are key factors that will significantly contribute to my career growth in cloud and DevOps.
+As proof of my commitment and readiness for this challenge, I successfully completed the first five assignments given by our tutor, Pravin Mishra.
+Tasks Completed
+1. Using ChatGPT as a Learning Assistant
+As a beginner in DevOps, I explored how ChatGPT can simplify complex technical concepts, answer questions, and support problem-solving. I created a prompt to demonstrate how AI can enhance my learning experience.
+
+2. Internet and Networking
+I watched a 58-minute video explaining how the internet works and the importance of networking. I learned key concepts such as Packet Switching, IP Addresses, TCP/IP, and HTTP/HTTPS, and gained a better understanding of how computers communicate over networks.
+
+3. Application Architecture & Stack
+This task introduced me to application architecture and how different components interact. I designed a basic application architecture and identified the technologies required to build and support scalable applications.
+
+4. Domain Name & DNS (Basic Concepts)
+I learned how the Domain Name System (DNS) translates human-readable domain names into IP addresses, making it easier for users to access websites without remembering numerical addresses.
+
+5. Visual Studio Code Setup (Hands-on)
+I installed and configured Visual Studio Code as my primary development environment. This tool will support coding, configuration management, and other DevOps-related activities throughout my learning journey.
+
+I look forward to the opportunity to grow, contribute, and learn alongside other passionate individuals in the DevOps Micro-Internship Cohort 3.
+
+This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://lnkd.in/eKFMaM5i · Start your DevOps journey: https://lnkd.in/eDwscBku
 
 ---
 
@@ -237,19 +261,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+I found the assignments easy to complete because they gave me a better understanding of fundamental networking concepts through research. Learning about networking, IP addressing, DNS, packet switching, and other internet technologies helped strengthen my knowledge and made the tasks easier to understand and complete.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+The interview process was a bit challenging for me because I am not yet used to that kind of experience. However, I believe it will help build my confidence, improve my communication skills, and better prepare me for future interviews.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Next week, I will improve by starting my tasks earlier, managing my time more effectively, and staying consistent throughout the week. I also want to strengthen my determination to complete tasks on time while continuously improving my understanding of DevOps concepts.
 
 ---
 

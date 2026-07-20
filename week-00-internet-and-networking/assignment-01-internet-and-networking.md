@@ -104,18 +104,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* React
+* Flutter
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Python/Django
+* Node/Express
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* MYSQL
+* Postgres
 
 ---
 

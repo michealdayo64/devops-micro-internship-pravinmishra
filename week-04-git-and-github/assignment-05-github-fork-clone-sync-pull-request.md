@@ -102,13 +102,13 @@ Open a Pull Request from `feature-readme-update` on your fork to `main` on the u
 
 #### Screenshot 8 — Pull Request creation page showing the correct base repository, base branch, head repository, compare branch, and title
 
-Add your screenshot here.
+![paste file](screenshots/week-04-assignment-01-screenshot-44.jpg)
 
 ---
 
 #### Screenshot 9 — Successfully created Pull Request page with the PR number visible
 
-Add your screenshot here.
+![paste file](screenshots/week-04-assignment-01-screenshot-45.jpg)
 
 ---
 
@@ -116,7 +116,7 @@ Add your screenshot here.
 
 Paste your Pull Request URL here:
 
-`Add your URL here`
+https://github.com/pravinmishraaws/devops-micro-internship-interviews/pull/392
 
 ---
 
@@ -128,13 +128,13 @@ Paste your Pull Request URL here:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-git-github-share-7486413390198943744-U-EK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — LinkedIn post showing your successfully created Pull Request
 
-Add your screenshot here.
+![paste file](screenshots/linkedin2.jpg)
 
 ---
 
@@ -151,7 +151,7 @@ Add your screenshot here.
 
 Paste your fork URL here:
 
-`Add your URL here`
+https://github.com/michealdayo64/devops-micro-internship-interviews
 
 ---
 

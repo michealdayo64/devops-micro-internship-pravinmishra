@@ -210,13 +210,13 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 
 #### Screenshot 9 — Your Pull Request showing the base repository is your own fork, plus the title and description, with the `/pr-ready` draft visible for comparison (paste it in the PR conversation or your notes below)
 
-Add your screenshot here.
+![paste file](screenshots/week-04-assignment-01-screenshot-61.jpg)
 
 ---
 
 #### PR Link
 
-Add your PR URL here...
+https://github.com/michealdayo64/devops-micro-internship-pravinmishra/pull/1
 
 ---
 
@@ -224,19 +224,18 @@ Add your PR URL here...
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-Add your answer here.
+Yes i did edit the AI's drafted pr description before using it because i try to explain the workflow of how i achieved the task giving to me
 
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-Add your answer here.
-
+If I had blindly copy-pasted the AI's draft without reading it, it could have contained incorrect, incomplete, or misleading information. It might also have included errors, outdated facts, or content that didn't fully answer the question, leading to poor-quality work or loss of credibility.
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-Add your answer here.
+This PR needs to target my own fork because I don't have direct write access to the shared upstream repository. By opening the PR against my fork, I can safely review and merge changes into my fork's main branch first. Once the changes are verified, I can then submit a separate pull request from my fork to the upstream repository for the maintainers to review and merge.
 
 ---
 
@@ -250,31 +249,31 @@ Explain this assignment's workflow using the same Gather → Analyze → Human A
 
 **1. Which step(s) represent Gather?**
 
-Add your answer here.
+The Gather step is represented by both the pre-commit hook and the /pr-ready skill. The pre-commit hook gathers information by scanning staged changes for issues such as hardcoded secrets and oversized files, while the /pr-ready skill gathers information by examining the staged diff and repository state to understand what changed. Both collect evidence without modifying the code, preparing the information needed for the next stage of the workflow.
 
 ---
 
 **2. Which step(s) represent Analyze?**
 
-Add your answer here.
+The Analyze step is when both the pre-commit hook and the /pr-ready skill evaluate the gathered information. The pre-commit hook analyzes the staged changes against predefined rules and patterns (such as regular expressions) to detect issues like hardcoded AWS access keys. The /pr-ready skill performs a broader analysis of the staged diff, identifying potential problems such as leftover debug statements and providing contextual feedback and recommendations before the changes are submitted.
 
 ---
 
 **3. Which step is Human Act, and why must a human — not Claude — run `git commit`, `git push`, and open the PR?**
 
-Add your answer here.
+The Human Act phase is when the engineer reviews the results from the pre-commit hook and the /pr-ready skill, fixes any identified issues, and then manually runs git commit, git push, and opens the Pull Request. These actions require human judgment, approval, and accountability. While Claude can analyze the changes and provide recommendations, it should not make repository changes or publish code on its own. This ensures that the engineer verifies the code, confirms the AI's suggestions are appropriate, and remains responsible for everything that is committed and submitted for review.
 
 ---
 
 **4. Which step is Verify?**
 
-Add your answer here.
+I ran the /pr-ready skill again to verify that no security or review issues remained before pushing the branch and opening the Pull Request. This confirmed that the repository was ready for review. I then removed the secret and debug statement and committed the changes successfully because the pre-commit hook no longer blocked the commit.
 
 ---
 
 **5. In one or two sentences: why do you need *both* the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
 
-Add your answer here.
+No, one is not enough. The pre-commit hook enforces fixed, deterministic rules such as blocking hardcoded secrets and oversized files, while the AI skill provides contextual analysis, identifies issues that fixed rules may miss, and helps prepare the PR. Together, they provide both automated rule enforcement and intelligent review, with the engineer making the final decision.
 
 ---
 
@@ -288,7 +287,7 @@ Publish a LinkedIn post summarizing what you built and what you learned about co
 
 #### LinkedIn Post URL
 
-Add your LinkedIn post URL here...
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-devsecops-git-ugcPost-7487679490421280768-K2QH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
@@ -296,9 +295,9 @@ Add your LinkedIn post URL here...
 
 Add 3-5 bullet points on what you learned this week.
 
--
--
--
+- How combining DevOps practices with Agentic AI creates smarter workflows
+- The value of AI-assisted code review
+- How fixed-rule automation improves software security
 
 ---
 
@@ -318,7 +317,7 @@ Add 3-5 bullet points on what you learned this week.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+https://github.com/michealdayo64/devops-micro-internship-pravinmishra
 
 ---
 

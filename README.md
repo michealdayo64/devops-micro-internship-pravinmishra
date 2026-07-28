@@ -79,8 +79,8 @@ Week 02 → Agentic AI with Claude Code
 Week 03 → Linux & Bash for DevOps
 [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)
 
-<!-- Week 04 → Git & GitHub -->
-<!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) -->
+Week 04 → Git & GitHub
+[![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/)
 
 <!-- Week 05 → DevOps Lifecycle & Agile -->
 <!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
@@ -134,7 +134,7 @@ Week 03 → Linux & Bash for DevOps
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_what-my-version-20-will-look-like-seven-share-7477855386692411392-htfn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg  | https://medium.com/@omotoshomicheal93/my-version-2-0-building-a-life-on-standards-systems-and-identity-c687ebba2cca |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_dmibypravinmishra-agenticai-claudecode-ugcPost-7481508737376247808-IVdr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/my-week-2-reflection-blog-for-agentic-ai-with-devops-ddef122248ab?sharedUserId=omotoshomicheal93 |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-linux-bash-share-7485043430948016128-5cTN/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/building-an-agentic-linux-triage-workflow-with-bash-and-claude-ai-905bc037654a?sharedUserId=omotoshomicheal93 |
-| 04 | Git & GitHub | 🔄 In Progress | ⏳ Pending | — | — |
+| 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-devsecops-git-ugcPost-7487679490421280768-K2QH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/from-manual-git-workflows-to-ai-assisted-development-safety-checks-building-smarter-devops-bd414fe278e7 |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |

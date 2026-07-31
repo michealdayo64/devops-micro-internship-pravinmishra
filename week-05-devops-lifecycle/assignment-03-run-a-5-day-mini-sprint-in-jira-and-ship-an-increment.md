@@ -72,13 +72,15 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 7 — Code editor showing the footer and date logic
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-25.PNG)
+
+![paste file](screenshots/week-05-assignment-01-screenshot-26.PNG)
 
 ---
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-27.PNG)
 
 ---
 
@@ -90,7 +92,7 @@ Add your screenshot here.
 
 #### Screenshot 10 — Jira Story comment showing the Day 2 Daily Scrum update
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-29.PNG)
 
 ---
 

@@ -86,7 +86,7 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 9 — README snippet documenting the footer and date behavior
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-30.jpg)
 
 ---
 

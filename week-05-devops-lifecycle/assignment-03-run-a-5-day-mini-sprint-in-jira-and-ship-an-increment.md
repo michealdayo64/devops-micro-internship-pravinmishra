@@ -106,19 +106,19 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-31.PNG)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-32.PNG)
 
 ---
 
 #### Screenshot 13 — Jira Story comment showing the Day 3 Daily Scrum update
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-33.PNG)
 
 ---
 
@@ -132,7 +132,7 @@ Replace the existing homepage tagline with the required DMI Website call-to-acti
 
 #### Screenshot 14 — EC2 browser view showing "Start your DevOps Journey here" and the clickable "Visit the DMI Website" link
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-35.jpg)
 
 ---
 

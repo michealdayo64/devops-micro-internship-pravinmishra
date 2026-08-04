@@ -146,13 +146,13 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 15 — Burndown Chart for Sprint 1
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-36.jpg)
 
 ---
 
 #### Screenshot 16 — Jira retrospective comment
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-37.jpg)
 
 ---
 

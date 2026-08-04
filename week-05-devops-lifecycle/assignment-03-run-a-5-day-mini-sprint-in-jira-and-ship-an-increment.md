@@ -158,7 +158,7 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 17 — Final EC2 browser view showing the complete footer requirement
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-38.PNG)
 
 ---
 

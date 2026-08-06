@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-38.jpg)
 
 ---
 
@@ -42,7 +42,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-39.jpg)
 
 ---
 
@@ -56,7 +56,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-40.jpg)
 
 ---
 
@@ -70,13 +70,15 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-41.jpg)
 
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-42.jpg)
+
+![paste file](screenshots/week-05-assignment-01-screenshot-43.jpg)
 
 ---
 

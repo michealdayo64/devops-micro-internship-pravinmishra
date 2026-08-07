@@ -92,7 +92,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-44.jpg)
 
 ---
 
@@ -100,7 +100,21 @@ Add your screenshot here.
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+1. S1 Hero tagline (1 Point): This story is estimated at 1 point because it only involves updating the hero section text by changing the `<h1> ` heading. It is a straightforward UI text change with minimal effort and no technical complexity.
+
+2. S3 Primay CTA Color (1 Point): This story is estimated at 1 point because it only requires changing the background color of the primary call-to-action button and ensuring the hover state matches the new design. It is a simple styling task with very low implementation effort.
+
+3. S3 Job card typography (2 Points): This story is estimated at 2 points because it requires increasing the job card title's font size and weight to improve readability. In addition to the styling changes, the layout must be verified across different screen sizes to ensure the design remains responsive and visually consistent.
+
+4. Remote badge (UI-only) (2 Points): This story is estimated at 2 points because it involves adding a new badge that is displayed only for remote jobs. It requires styling the badge using CSS properties such as background-color, color, padding, and margin, followed by testing to ensure it displays correctly across the interface.
+
+5. Posted on date text (1 Point): This is a simple text addition with no extra logic.
+
+6. Advanced search labels (2 Points): This story is estimated at 2 points because it involves creating two search input fields that allow users to filter jobs by location and job type. Besides adding the inputs, they must be properly styled, connected to the search functionality, and tested to ensure they work correctly and provide a good user experience.
+
+7. Job detail Apply Now CTA (1 Point): This story is estimated at 1 point because it only involves adding an Apply Now button, styling it with a background color and hover effect, and linking it to a mailto: URL so users can open their default email application. It is a simple UI enhancement with minimal implementation effort.
+
+8. Footer trust links (1 Point): This story is estimated at 1 point because it only involves adding anchor `<a>` tags to make the About and Contact links visible and clickable. It is a straightforward implementation with minimal complexity and effort.
 
 ---
 
@@ -114,13 +128,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-45.jpg)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-46.jpg)
 
 ---
 
@@ -134,7 +148,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-47.jpg)
 
 ---
 
@@ -148,19 +162,19 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-48.jpg)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-49.jpg)
 
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-50.jpg)
 
 ---
 
@@ -174,7 +188,9 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-51.jpg)
+
+![paste file](screenshots/week-05-assignment-01-screenshot-52.jpg)
 
 ---
 
@@ -190,13 +206,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-agile-scrum-ugcPost-7491531052738383872-XKw4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/linkedin222.jpg)
 
 ---
 

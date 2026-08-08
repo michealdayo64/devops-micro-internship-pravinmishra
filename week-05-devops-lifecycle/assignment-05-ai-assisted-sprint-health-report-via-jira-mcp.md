@@ -20,13 +20,13 @@ Generate an API token from your Atlassian account that the MCP server will use t
 
 #### Screenshot 1 — Jira API token creation confirmation page showing the token name, with the token value not visible
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-53.jpg)
 
 ### Notes You Must Write (Very Important):
 
 Why does the MCP server need your site URL and account email in addition to the token?
 
-Add your answer here
+The MCP server needs the site URL, account email, and API token to authenticate and connect to the correct Jira instance. The site URL identifies the specific Jira workspace, the account email identifies the user account making the requests, and the API token securely verifies the user's identity without using their password. Together, these credentials allow the MCP server to communicate with the correct Jira account and perform authorized actions such as creating, updating, and retrieving project data.
 
 ---
 
@@ -40,13 +40,13 @@ Create or update `.mcp.json` at your project root with a Jira MCP server block, 
 
 #### Screenshot 2 — `.mcp.json` open in VS Code showing the Jira server configuration
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-54.jpg)
 
 ### Notes You Must Write (Very Important):
 
 Compare this jira block to the github block from Week 2 Assignment 5. The GitHub server ran via npx (a Node.js package); this one runs via uvx (a Python package) — what stays exactly the same shape despite that difference, and why doesn't Claude Code care which language a given MCP server is written in?
 
-Add your answer here
+The MCP protocol and configuration used to establish communication between Claude Code and the server stays the same. And why claude code does not care about the programming language it uses is because It only needs to know how to start the server and communicate with it through the MCP protocol. The MCP protocol provides a standard interface, so the underlying implementation language can be JavaScript, Python, or another supported language.
 
 ---
 
@@ -60,13 +60,15 @@ Add your Jira site URL, account email, and API token to `.claude/settings.local.
 
 #### Screenshot 3 — `settings.local.json` open in VS Code showing the `env` section, with the actual token value blurred or covered
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-55.jpg)
 
 ### Notes You Must Write (Very Important):
 
 Why must JIRA_API_TOKEN live in settings.local.json and never in .mcp.json?
 
-Add your answer here
+JIRA_API_TOKEN must be stored in settings.local.json because it is a secret credential and should never be committed to GitHub. The settings.local.json file is included in .gitignore, which prevents Git from tracking and pushing the file to the repository. 
+
+Keeping the token in settings.local.json helps protect the credential while still allowing the local MCP configuration to access it when needed.
 
 ---
 
@@ -80,7 +82,7 @@ Restart Claude Code and confirm the Jira MCP server shows as connected.
 
 #### Screenshot 4 — `/mcp` output showing `jira: connected`
 
-Add your screenshot here.
+![paste file](screenshots/week-05-assignment-01-screenshot-56.jpg)
 
 ---
 

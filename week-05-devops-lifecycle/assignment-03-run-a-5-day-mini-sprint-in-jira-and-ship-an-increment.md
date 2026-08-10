@@ -166,7 +166,7 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 Paste your unlisted YouTube or accessible Google Drive demo-video link here:
 
-`Add your URL here`
+https://drive.google.com/file/d/1AcugeQvjkKVE1w7XdZB2IUpuNZRz89sh/view?usp=sharing
 
 ---
 

@@ -1,4 +1,4 @@
-# DEVOPS MICRO INTERNSHIP COHORT 3 - ALL REQUIRED LINKS - THE CLOUD ADVISORY
+# DEVOPS MICRO INTERNSHIP - ALL REQUIRED LINKS - THE CLOUD ADVISORY
 
 ---
 
@@ -16,9 +16,21 @@
 
 ## [Cohort-3 Leaderboard - LIVE](https://dmi.pravinmishra.com/leaderboard.html?utm_source=github&utm_medium=readme)
 
+## [Self-Phased Track Leaderboard](https://dmi.pravinmishra.com/self-paced-leaderboard.html?utm_source=github&utm_medium=readme)
+
 ---
 
 ## IMPORTANT FOR LINKEDIN AND BLOG POSTS - Always add the below line and the hashtags
+
+Use the P.S. line for **your track**.
+
+| Track |
+|-------|
+| Cohort 3 (Live) |
+| DMI-Foundation Track |
+| DMI-Self-Paced Engineer Track |
+
+### Cohort 3 (Live) Track
 
 **For LinkedIn posts:**
 
@@ -32,7 +44,9 @@ Replace `YOUR-GITHUB-USERNAME` with your GitHub username — that link is your p
 
 #DMIByPravinMishra 
 
-### Tag 'Pravin Mishra', 'Lead Co mentor' & your group's co comentors to your LinkedIn post.
+---
+
+### Tag 'Pravin Mishra', 'Lead Co mentor' & your group's co comentors to your LinkedIn post. (Cohort 3 Live track students)
 
 Pravin Mishra [Linkedin profile](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
 

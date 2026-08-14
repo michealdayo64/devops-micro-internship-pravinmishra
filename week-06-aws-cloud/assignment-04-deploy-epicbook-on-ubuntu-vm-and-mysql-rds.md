@@ -162,7 +162,7 @@ Clone the EpicBook repository, install backend dependencies, configure `.env` wi
 
 #### Screenshot 16 — `curl` output proving the backend responds; a 200, 301, or 404 response is acceptable if the service responds
 
-![paste file](screenshots/week-06-screenshot-28.jpg)
+![paste file](screenshots/week-06-screenshot-29.jpg)
 
 ---
 
@@ -176,13 +176,13 @@ Copy the frontend files to the Nginx web root and configure Nginx to reverse-pro
 
 #### Screenshot 17 — `nginx -t` success output
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-30.jpg)
 
 ---
 
 #### Screenshot 18 — Nginx configuration snippet showing the `/api/` reverse proxy
 
-Add your screenshot here.
+Add yo
 
 ---
 
@@ -196,19 +196,19 @@ Verify the frontend loads publicly, the backend responds through Nginx, and EC2 
 
 #### Screenshot 19 — Browser showing the EpicBook application loaded with the public IP visible
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-31.jpg)
 
 ---
 
 #### Screenshot 20 — Terminal showing a successful API call through the public endpoint, such as `curl http://<EC2_PUBLIC_IP>/api/...`
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-32.jpg)
 
 ---
 
 #### Screenshot 21 — Terminal showing the successful database connectivity test using `SELECT 1;` or similar
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-33.jpg)
 
 ---
 

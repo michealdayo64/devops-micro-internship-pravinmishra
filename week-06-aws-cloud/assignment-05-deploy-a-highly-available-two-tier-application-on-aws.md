@@ -20,31 +20,35 @@ Build a VPC (10.0.0.0/16) with two public and two private subnets across two Ava
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-34.jpg)
 
 ---
 
 #### Screenshot 2 — Subnets list showing four subnets and their Availability Zones
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-35.jpg)
 
 ---
 
 #### Screenshot 3 — Public route table showing the Internet Gateway route and both public-subnet associations
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-36.jpg)
+
+![paste file](screenshots/week-06-screenshot-37.jpg)
 
 ---
 
 #### Screenshot 4 — Private route table showing the NAT Gateway route and both private-subnet associations
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-37.jpg)
+
+![paste file](screenshots/week-06-screenshot-38.jpg)
 
 ---
 
 #### Screenshot 5 — NAT Gateway status showing Available and the Elastic IP
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-40.jpg)
 
 ---
 
@@ -58,19 +62,19 @@ Create `ha-alb-sg` (HTTP public), `ha-web-sg` (HTTP only from `ha-alb-sg`, SSH f
 
 #### Screenshot 6 — ALB Security Group inbound rules
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-41.jpg)
 
 ---
 
 #### Screenshot 7 — EC2 Security Group inbound rules showing the ALB Security Group reference and SSH from your IP
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-42.jpg)
 
 ---
 
 #### Screenshot 8 — RDS Security Group inbound rule showing the database port allowed only from the EC2 Security Group
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-43.jpg)
 
 ---
 
@@ -84,13 +88,15 @@ Launch a private, Multi-AZ RDS database (MySQL or PostgreSQL) using the private 
 
 #### Screenshot 9 — RDS summary showing Multi-AZ = Yes and Publicly accessible = No
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-44.jpg)
+
+![paste file](screenshots/week-06-screenshot-45.jpg)
 
 ---
 
 #### Screenshot 10 — RDS connectivity section showing the DB Subnet Group and Security Group
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-46.jpg)
 
 ---
 
@@ -104,13 +110,13 @@ Create a Launch Template whose user data installs the web-server runtime, deploy
 
 #### Screenshot 11 — Launch Template details showing that user data exists, including a visible snippet
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-47.jpg)
 
 ---
 
 #### Screenshot 12 — A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-48.jpg)
 
 ---
 
@@ -124,7 +130,7 @@ Create an internet-facing ALB across both public subnets with an HTTP listener a
 
 #### Screenshot 13 — ALB details showing two public subnets in two Availability Zones
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-49.jpg)
 
 ---
 

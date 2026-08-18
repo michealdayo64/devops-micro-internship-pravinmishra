@@ -11,7 +11,7 @@ This is the most important assignment of the course. You will deploy the Book Re
 ---
 
 # Task 1 — Architecture Diagram
-
+ Vcpu
 ## Goal
 
 Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six subnets across two Availability Zones (two public Web Tier, two private App Tier, two private Database Tier), the public ALB, Web Tier EC2/Nginx, internal ALB, private App Tier EC2, private Multi-AZ RDS with its read replica, and the permitted traffic flow.
@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
+![paste file](screenshots/week-06-screenshot-62.jpg)
 
 ---
 
@@ -34,13 +34,25 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+us-east-1
 
 ---
 
 **Services:**
 
-Write your answer here.
+* VPC
+    - Subnet
+    - Internet Gateway
+    - Nat Gateway
+    - Route Table
+    - Security Group
+* EC2
+    - AMI Ubuntu Distribution
+    - T2 micro Vcpu
+    - Keypair
+* ALB
+* Target Group
+* RDS
 
 ---
 

@@ -136,7 +136,7 @@ Create an internet-facing ALB across both public subnets with an HTTP listener a
 
 #### Screenshot 14 — Target group showing at least one healthy target
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-50.jpg)
 
 ---
 
@@ -150,13 +150,15 @@ Create an Auto Scaling Group from the Launch Template across both public subnets
 
 #### Screenshot 15 — Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-51.jpg)
+
+![paste file](screenshots/week-06-screenshot-52.jpg)
 
 ---
 
 #### Screenshot 16 — EC2 instances list showing two running instances in different Availability Zones
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-53.jpg)
 
 ---
 
@@ -170,13 +172,13 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 #### Screenshot 17 — Browser showing the application loaded through the ALB DNS name with the URL visible
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-54.jpg)
 
 ---
 
 #### Screenshot 18 — Proof of a database write through a UI message or database query output
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-55.jpg)
 
 ---
 
@@ -192,25 +194,25 @@ Test B: simulate an Availability Zone impact (stop, detach, or reduce desired ca
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-56.jpg)
 
 ---
 
 #### Screenshot 20 — Target group showing healthy targets after replacement
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-57.jpg)
 
 ---
 
 #### Screenshot 21 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-58.jpg)
 
 ---
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-59.jpg)
 
 ---
 
@@ -224,7 +226,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 #### Screenshot 23 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-60.jpg)
 
 ---
 
@@ -232,19 +234,31 @@ Add your screenshot here.
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+A Virtual Private Cloud (VPC) was created with the 10.0.0.0/16 CIDR block to provide a secure and isolated network for communication between the application's compute, storage, databse, and memory resources.
+
+Within the VPC, subnets were created to divide the network into smaller segments. These subnets can be either public (allowing communication with the internet) or private (restricting communication to resources within the VPC).
+
+The infrastructure was distributed across two Availability Zones to improve high availability and fault tolerance. This design ensures that if one Availability Zone experiences a failure, such as a power outage or natural disaster, the application can continue running in the other Availability Zone.
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
+An Application Load Balancer (ALB) was configured to receive incoming traffic from users and distribute requests across healthy EC2 instances running the application. This improves traffic management, ensures even load distribution, and increases the application's availability.
+
+An Auto Scaling Group (ASG) was also implemented to automatically monitor the workload on the EC2 instances. When demand increases, the Auto Scaling Group launches additional instances to maintain application performance. When demand decreases, it can terminate unnecessary instances, helping to optimize resource utilization and reduce costs.
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
+A private Multi-AZ Amazon RDS database was configured to provide secure, highly available, and reliable data storage for the application. The database was deployed in private subnets, preventing direct access from the public internet and allowing communication only with authorized resources within the VPC.
+
+The Multi-AZ deployment replicated the database across two Availability Zones to improve fault tolerance and ensure business continuity. If the primary database becomes unavailable because of a hardware failure, power outage, or other unexpected event, Amazon RDS automatically fails over to the standby database, minimizing downtime and maintaining application availability.
 
 Summarize the results of both high-availability tests.
 
-Write your answer here.
+The first test verified that the Application Load Balancer and Auto Scaling Group could automatically redirect traffic to healthy EC2 instances when an instance became unavailable. This ensured that users could continue accessing the application without service interruption.
+
+The second test validated the Multi-AZ RDS deployment by confirming that the database could automatically fail over to the standby instance in another Availability Zone when the primary database became unavailable. This reduced downtime and ensured that the application remained connected to the database.
+
+Overall, both tests demonstrated that the infrastructure was resilient, fault-tolerant, and highly available, enabling the application to remain operational during unexpected failures.
 
 ---
 
@@ -260,13 +274,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-aws-cloudcomputing-share-7495280081540571136-WfvX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-61.jpg)
 
 ---
 

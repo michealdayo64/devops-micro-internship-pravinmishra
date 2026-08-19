@@ -68,7 +68,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+http://book-review-web-alb-1967907614.us-east-1.elb.amazonaws.com/
 
 ---
 
@@ -82,37 +82,37 @@ Capture visual proof of every tier and load balancer.
 
 #### Web EC2
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-63.jpg)
 
 ---
 
 #### App EC2
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-64.jpg)
 
 ---
 
 #### Public ALB
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-65.jpg)
 
 ---
 
 #### Internal ALB
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-66.jpg)
 
 ---
 
 #### RDS + Replica
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-68.jpg)
 
 ---
 
 #### App UI proof
 
-Add your screenshot here.
+![paste file](screenshots/week-06-screenshot-67.jpg)
 
 ---
 

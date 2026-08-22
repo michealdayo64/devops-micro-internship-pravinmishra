@@ -126,19 +126,38 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+### What Worked
+
+I would say that everything worked as expected. I successfully created the networking environment that enabled communication between the different resources. I also created the virtual servers and carried out the necessary installations and configurations to provide the environment where our application resides.
+
+In addition, I configured a load balancer to distribute incoming traffic across healthy resources. This improved the application's performance, availability, and reliability by ensuring that traffic was routed only to healthy instances.
+
 
 ---
 
 **Issues + fixes:**
 
-Write your answer here.
+The main challenges I encountered were related to application configuration and security group configuration.
+
+Initially, the frontend and backend of the application were located in the same folder, which caused several configuration issues and made it difficult to deploy the application properly. After troubleshooting, I separated the frontend and backend into their respective directories and configured them independently. This resolved the configuration issues and allowed the application to work as expected.
+
+I also encountered a security group configuration issue when sending requests from the web EC2 instance through the Application Load Balancer (ALB) to the private application EC2 instance. Since the application EC2 instance was placed in a private subnet, it needed to securely accept traffic only from the ALB.
+
+To resolve this, I created a dedicated security group for the private application EC2 instance and configured the inbound rules to allow traffic from the ALB's security group. This ensured that the private application server could receive legitimate requests through the ALB while remaining protected from direct public access.
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+The tools i used was
+1. nodejs
+2. nginx
+3. pm2
+4. git & github
+5. nextjs
+6. Express
+7. mysql
+6. chatgpt
 
 ---
 

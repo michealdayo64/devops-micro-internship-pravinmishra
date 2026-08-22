@@ -173,13 +173,14 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/ejKdw9jc
+
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/LinkedIn6.png)
 
 ---
 

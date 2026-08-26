@@ -136,8 +136,8 @@ Week 06 → AWS Cloud
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-linux-bash-share-7485043430948016128-5cTN/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/building-an-agentic-linux-triage-workflow-with-bash-and-claude-ai-905bc037654a?sharedUserId=omotoshomicheal93 |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-devsecops-git-ugcPost-7487679490421280768-K2QH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/from-manual-git-workflows-to-ai-assisted-development-safety-checks-building-smarter-devops-bd414fe278e7 |
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-agile-scrum-share-7491820387991904256-cagX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/from-traditional-sdlc-to-agile-scrum-what-i-learned-during-week-5-of-my-devops-micro-internship-bb83687e89d8 |
-| 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://lnkd.in/p/eHzAqaRz | https://medium.com/@omotoshomicheal93/week-6-of-my-devops-micro-internship-building-production-ready-applications-on-aws-71f88f9dec46 |
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-aws-cloudcomputing-share-7498355345463963649-FFnK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/week-6-of-my-devops-micro-internship-building-production-ready-applications-on-aws-71f88f9dec46 |
+| 07 | Azure Cloud | 🔄 In Progress | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |

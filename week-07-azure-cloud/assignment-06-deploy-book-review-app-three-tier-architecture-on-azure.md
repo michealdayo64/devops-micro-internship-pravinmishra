@@ -86,13 +86,13 @@ Deploy the Book Review App presentation layer on the approved web-tier compute s
 
 #### Screenshot 8 — Web-tier compute overview showing subnet and availability configuration
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-39.png)
 
 ---
 
 #### Screenshot 9 — Terminal or service output proving the presentation layer is running
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-40.png)
 
 ---
 
@@ -106,7 +106,9 @@ Deploy the Book Review App backend privately in the application subnet, configur
 
 #### Screenshot 10 — Application-tier compute overview showing private subnet placement
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-41.png)
+
+![paste file](screenshots/week-7-screenshot-41.png)
 
 ---
 
@@ -132,7 +134,9 @@ Create a private Azure managed database (public access disabled), with availabil
 
 #### Screenshot 13 — Database overview showing private connectivity and public access disabled
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-43.png)
+
+![paste file](screenshots/week-7-screenshot-44.png)
 
 ---
 

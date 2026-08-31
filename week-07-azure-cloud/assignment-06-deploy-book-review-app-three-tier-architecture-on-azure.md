@@ -114,13 +114,15 @@ Deploy the Book Review App backend privately in the application subnet, configur
 
 #### Screenshot 11 — Backend process, service, or listening-port evidence
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-45.png)
 
 ---
 
 #### Screenshot 12 — Internal health-check or API response (without exposing secrets)
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-46.png)
+
+![paste file](screenshots/week-7-screenshot-47.png)
 
 ---
 
@@ -142,13 +144,13 @@ Create a private Azure managed database (public access disabled), with availabil
 
 #### Screenshot 14 — Availability, backup, and retention configuration
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-48.png)
 
 ---
 
 #### Screenshot 15 — Successful schema or connectivity verification (without exposing credentials)
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-49.png)
 
 ---
 
@@ -162,19 +164,19 @@ Configure the approved public entry service with health probes and backend pools
 
 #### Screenshot 16 — Public entry service showing listener, frontend endpoint, and healthy web targets
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-50.png)
 
 ---
 
 #### Screenshot 17 — Internal application-tier load-balancing or routing configuration where applicable
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-51.png)
 
 ---
 
 #### Screenshot 18 — Azure Monitor, diagnostic settings, logs, metrics, or alert evidence
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-52.png)
 
 ---
 
@@ -188,25 +190,25 @@ Confirm the Book Review App works end to end through the public endpoint, with a
 
 #### Screenshot 19 — Browser showing the Book Review App through the public endpoint
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-53.png)
 
 ---
 
 #### Screenshot 20 — Proof of successful database-backed read and write operations
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-54.png)
 
 ---
 
 #### Screenshot 21 — Evidence that private tiers are not publicly accessible
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-55.png)
 
 ---
 
 #### Screenshot 22 — Availability-test and healthy-target evidence
 
-Add your screenshot here.
+![paste file](screenshots/week-7-screenshot-56.png)
 
 ---
 
@@ -214,7 +216,7 @@ Add your screenshot here.
 
 Paste your public endpoint URL here:
 
-`Add your URL here`
+http://40.127.5.17/
 
 ---
 
@@ -222,7 +224,89 @@ Paste your public endpoint URL here:
 
 Summarize what worked, issues encountered and how they were fixed, and the availability/security/secrets/monitoring/backup choices made.
 
-Write your answer here.
+### Project Overview
+
+This project involved deploying a Book Review web application on Microsoft Azure using a production-style three-tier architecture consisting of the presentation/web tier, application/business-logic tier, and database tier.
+
+The primary objective was to design and deploy an architecture that demonstrates high availability, security, scalability, monitoring, and data protection by leveraging Azure networking, compute, load balancing, and database services.
+
+### Project Execution
+
+I began by creating an Azure Resource Group to logically organize and manage all resources associated with the application.
+
+I then created an Azure Virtual Network (VNet) using the CIDR range 10.0.0.0/16. The VNet provided an isolated networking environment that enabled controlled communication between the different application tiers.
+
+The network was divided into three subnets: one public subnet for the web tier and two private subnets for the application and database tiers. The resources were distributed across availability zones where supported to improve resilience and reduce the risk of a single infrastructure failure affecting the entire application.
+
+I provisioned two virtual machines to support the application infrastructure and an Azure Database for MySQL instance for persistent data storage.
+
+Network Security Groups (NSGs) were configured to restrict traffic according to the application's communication requirements. The intended traffic flow was:
+
+Internet → Public Load Balancer → Web Tier → Internal Load Balancer → Application Tier → Database
+
+Only the required ports were permitted between the different tiers, reducing unnecessary network exposure.
+
+Load balancing was implemented to distribute incoming traffic across healthy virtual machines. Health probes were configured to determine whether backend instances were available to receive traffic, improving application availability and resilience.
+
+I also installed and configured the required operating-system, web-server, runtime, and application dependencies on the virtual machines. Environment variables were configured to allow the application to connect securely to its required services.
+
+### Issues Encountered and Resolution
+Load Balancer Health Probes Showing Unhealthy
+
+One of the major issues encountered during deployment was that the Azure Load Balancer health probes initially reported the virtual machines as unhealthy, even though the application appeared to be running.
+
+To troubleshoot the issue, I connected to the web and application servers through SSH and performed several checks:
+
+- Verified that Nginx was running correctly.
+- Used curl to test whether the application was responding locally.
+- Checked the ports on which the services were listening.
+- Reviewed the Network Security Group rules.
+- Compared the Load Balancer health probe port with the ports permitted by the NSG.
+
+The root cause was an incorrect port configuration in the NSG. The port allowed by the NSG did not match the port being used by the Load Balancer health probe.
+
+I corrected the NSG rules to allow the appropriate health-probe traffic. After the change, the Load Balancer successfully identified the virtual machines as healthy and began distributing traffic correctly.
+
+### Availability, Security, Secrets, Monitoring and Backup
+
+#### Availability
+
+High availability was addressed by deploying multiple application instances and using Azure Load Balancing to distribute traffic across healthy servers. Availability zones were also used where supported to reduce the impact of infrastructure-level failures.
+
+The Load Balancer health probes automatically identify unhealthy instances and prevent traffic from being directed to them.
+
+#### Security
+
+Security was implemented using a defense-in-depth network approach. Network Security Groups were configured to permit only the required traffic between application tiers.
+
+The architecture minimized direct exposure of internal resources by keeping the application and database tiers private and controlling communication through defined network paths.
+
+The intended secure traffic flow was:
+
+Public Internet → Public Load Balancer → Web Server → Internal Load Balancer → Application Server → Database
+
+#### Secrets Management
+
+Application credentials and database connection information were kept outside the application source code using environment variables in a .env file. The .env file was not committed to the source-code repository and was referenced through environment-variable names by the application.
+
+
+#### Monitoring
+
+The Load Balancer health probes were used to continuously monitor the availability of backend instances and ensure that traffic was directed only to healthy servers.
+
+Additional monitoring and logging can be implemented using Azure Monitor and Log Analytics to provide deeper visibility into VM performance, application behavior, network activity, and operational issues.
+
+#### Backup
+
+Backup was enabled for the Azure Database for MySQL instance during database provisioning. This provides a mechanism for protecting application data and supporting recovery in the event of data loss or infrastructure failure.
+
+### Overall Outcome
+
+The project provided practical experience in deploying a production-style three-tier application on Azure. I gained hands-on experience with Azure networking, subnets, NSGs, virtual machines, load balancing, Azure Database for MySQL, availability, troubleshooting, application deployment, SSL database connectivity, and process management using PM2.
+
+The project also demonstrated the importance of validating communication between infrastructure components rather than assuming that an application is fully operational simply because its individual services appear to be running.
+
+
 
 ---
 

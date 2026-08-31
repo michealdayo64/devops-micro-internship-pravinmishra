@@ -26,6 +26,82 @@ Create an architecture diagram and implementation plan identifying the presentat
 
 #### Screenshot 2 — Written architecture assumptions and selected Azure services
 
+# Architecture Assumptions
+
+## 1. Business and Application
+
+* The application follows a standard three-tier architecture consisting of the **Presentation Tier, Application Tier, and Data Tier**.
+* The application is accessed by users over the public internet using **HTTPS**.
+
+## 2. Network
+
+* A single **Azure Virtual Network (VNet)** is used to host the application components.
+* Each tier is deployed in a separate subnet to provide network isolation.
+* **Network Security Groups (NSGs)** are used to control inbound and outbound traffic for each tier.
+
+## 3. Security
+
+* All internet traffic enters the environment through **Azure Front Door** and **Azure Application Gateway with Web Application Firewall (WAF)**.
+* **TLS/SSL encryption** is used to secure client connections.
+* The database tier is not directly accessible from the public internet.
+* The principle of **least privilege** is applied to users, applications, and network access.
+
+## 4. High Availability and Scalability
+
+* The Web and Application tiers use **Azure Virtual Machine Scale Sets** to provide high availability and automatic scaling.
+* The database tier uses **Azure Database for MySQL** with a primary database and read replica to support availability and read scalability.
+
+## 5. Traffic Flow
+
+The assumed traffic flow is:
+
+**Internet/User → Azure Front Door → Application Gateway (WAF) → Web Tier → Application Tier → Database Tier**
+
+* User requests first enter through the public endpoint.
+* The requests are inspected and routed by the Application Gateway/WAF.
+* The Web Tier forwards application requests to the Application Tier.
+* The Application Tier communicates with the database to store and retrieve application data.
+* The response follows the appropriate path back to the user.
+
+## 6. Management and Monitoring
+
+* Centralized monitoring, logging, and alerting are enabled across the environment.
+* Infrastructure and application resources are monitored for **performance, availability, and security**.
+
+## 7. Backup and Recovery
+
+* Regular backups are enabled for critical resources, particularly the database.
+* Recovery procedures are assumed to be available for critical components in case of failure or data loss.
+
+## 8. Environment
+
+* The architecture can be replicated across different environments such as **Development, Testing, and Production** while maintaining the same fundamental design.
+
+---
+
+# Selected Azure Services
+
+| Azure Service                                          | Purpose                                                                                                                                                             |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Azure Front Door**                                   | Provides the global public entry point for the application, including routing, HTTPS termination, CDN capabilities, and protection against certain network attacks. |
+| **Azure Application Gateway + WAF**                    | Acts as a Layer 7 load balancer and Web Application Firewall. It inspects HTTP/HTTPS traffic and routes legitimate requests to the Web Tier.                        |
+| **Azure Virtual Machine Scale Set – Web Tier**         | Hosts the presentation/web servers and provides automatic scaling and high availability.                                                                            |
+| **Azure Virtual Machine Scale Set – Application Tier** | Hosts the application's business logic and APIs while providing scalability and high availability.                                                                  |
+| **Azure Database for MySQL – Primary**                 | Provides the managed relational database used to store application data.                                                                                            |
+| **Azure Database for MySQL – Read Replica**            | Provides a replica for read scalability and can support availability and disaster-recovery strategies depending on the selected configuration.                      |
+| **Network Security Group (NSG)**                       | Controls network traffic at the subnet or network-interface level and restricts unauthorized access between tiers.                                                  |
+| **Azure NAT Gateway**                                  | Provides controlled outbound internet connectivity for resources in private subnets without assigning public IP addresses to those resources.                       |
+| **Azure Bastion**                                      | Provides secure SSH/RDP management access to virtual machines without exposing their management ports directly to the public internet.                              |
+| **Azure Monitor**                                      | Collects metrics and monitoring information to track the health, performance, and availability of Azure resources.                                                  |
+| **Log Analytics**                                      | Provides centralized collection, storage, and querying of logs for troubleshooting, monitoring, and security analysis.                                              |
+| **Microsoft Defender for Cloud**                       | Provides security posture management, threat detection, recommendations, and vulnerability assessment for the Azure environment.                                    |
+| **Azure Backup**                                       | Provides backup and recovery capabilities for supported Azure resources and helps protect critical data from accidental deletion or failures.                       |
+
+## Overall Architecture
+
+The selected services work together to provide a **secure, scalable, highly available, and manageable three-tier application architecture**. Public traffic is controlled through Azure Front Door and Application Gateway/WAF, while the Web, Application, and Database tiers are isolated within the Azure Virtual Network. NSGs enforce network-level security, Bastion provides secure administrative access, and Azure Monitor, Log Analytics, Defender for Cloud, and Azure Backup provide operational visibility, security, and recovery capabilities.
+
+
 ![paste file](screenshots/week-7-screenshot-33.png)
 
 ---

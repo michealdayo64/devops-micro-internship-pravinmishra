@@ -144,7 +144,11 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
 
-The findings that maps the aws and azure together
+The finding categories that mapped between the AWS audit from Week 6 and the Azure audit were primarily network security and SSH access control. In both cloud environments, the AI agent was able to identify when a server was configured to allow SSH access from any IP address (0.0.0.0/0). It then reviewed the security vulnerability, explained the potential impact of exposing the server to unrestricted SSH access, and recommended an appropriate remediation, such as restricting SSH access to approved administrator IP addresses or a secure management path.
+
+What remained exactly the same was the overall audit workflow and reasoning process. Although the AWS and Azure CLI commands are completely different (aws versus az), the process remained consistent: run the cloud command → collect the configuration → identify the security finding → explain the vulnerability and its impact → recommend remediation.
+
+Therefore, the main difference between the two audits was the cloud-specific CLI syntax and commands, while the underlying security-auditing methodology remained the same
 
 ---
 

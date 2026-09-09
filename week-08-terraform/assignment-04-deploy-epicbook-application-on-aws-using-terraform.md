@@ -243,7 +243,7 @@ Use the root Terraform configuration to call the Network, EC2, and RDS modules a
 
 Add a screenshot of VS Code showing the root `main.tf` with the Network, EC2, and RDS module blocks.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-52.png)
 
 ---
 
@@ -251,7 +251,9 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing values passed from the Network module to the EC2 and RDS modules.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-53.png)
+
+![paste file](screenshots/week-08-screenshot-54.png)
 
 ---
 
@@ -259,7 +261,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the root EC2 public IP and RDS endpoint outputs.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-56.png)
 
 ---
 
@@ -275,7 +277,7 @@ Initialize the modular Terraform project, validate the configuration, review the
 
 Add a screenshot of the terminal showing successful `terraform init` output.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-55.png)
 
 ---
 
@@ -283,7 +285,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `terraform validate` output.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-57.png)
 
 ---
 
@@ -291,7 +293,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan summary and proposed resources.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-58.png)
 
 ---
 
@@ -299,7 +301,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-59.png)
 
 ---
 
@@ -307,7 +309,7 @@ Add your screenshot here.
 
 Add a screenshot showing the EC2 public IP and RDS endpoint returned by `terraform output`.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-59.png)
 
 ---
 
@@ -323,7 +325,7 @@ Verify that the EC2 and RDS resources were successfully provisioned and confirm 
 
 Add a screenshot of AWS CLI showing the EC2 instance running.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-60.png)
 
 ---
 
@@ -331,7 +333,7 @@ Add your screenshot here.
 
 Add a screenshot of AWS CLI showing that RDS is available and not publicly accessible.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-61.png)
 
 ---
 
@@ -339,7 +341,7 @@ Add your screenshot here.
 
 Add a screenshot of the EC2 terminal showing the required software version checks and the active Nginx service.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-62.png)
 
 ---
 
@@ -357,7 +359,9 @@ Add a screenshot of the terminal showing a successful connection from EC2 to Ama
 
 Ensure that the database password is not visible.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-66.png)
+
+
 
 ---
 
@@ -365,7 +369,10 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing the EpicBook tables and imported data.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-66.png)
+
+![paste file](screenshots/week-08-screenshot-67.png)
+
 
 ---
 

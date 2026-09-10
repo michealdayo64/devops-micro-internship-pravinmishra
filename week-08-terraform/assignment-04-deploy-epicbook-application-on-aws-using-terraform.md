@@ -388,7 +388,7 @@ Install EpicBook dependencies, configure the application to use Amazon RDS, conf
 
 Add a screenshot of the terminal showing successful dependency installation and the `node_modules` directory.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-68.png)
 
 ---
 
@@ -396,7 +396,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing a successful Nginx configuration test and active service status.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-69.png)
 
 ---
 
@@ -404,7 +404,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing EpicBook running or listening on port `8080`.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-70.png)
 
 ---
 
@@ -416,7 +416,7 @@ Verify that EpicBook, EC2, Nginx, and Amazon RDS work together successfully.
 
 ## EC2 Public IP URL
 
-**EC2 Public IP URL:** Add the working EpicBook EC2 public IP URL here
+**EC2 Public IP URL:** http://54.147.110.126/
 
 ## Evidence
 
@@ -424,7 +424,7 @@ Verify that EpicBook, EC2, Nginx, and Amazon RDS work together successfully.
 
 Add a screenshot of the browser showing EpicBook using the EC2 public IP.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-71.png)
 
 ---
 
@@ -432,7 +432,7 @@ Add your screenshot here.
 
 Add a screenshot of the browser showing a successful cart or checkout action.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-72.png)
 
 ---
 
@@ -442,7 +442,7 @@ Add a screenshot of the terminal showing the corresponding RDS database record c
 
 Ensure that database credentials and other sensitive values are not visible.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-73.png)
 
 ---
 
@@ -458,7 +458,7 @@ Remove all AWS resources created by the modular Terraform configuration.
 
 Add a screenshot of the terminal showing successful `terraform destroy` completion.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-74.png)
 
 ---
 

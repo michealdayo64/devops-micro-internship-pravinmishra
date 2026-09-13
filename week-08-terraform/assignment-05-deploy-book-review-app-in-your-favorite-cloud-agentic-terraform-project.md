@@ -6,8 +6,8 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Student Details
 
-**Full Name:** Add your full name here  
-**Cloud Platform:** AWS or Azure  
+**Full Name:** Micheal Omotosho
+**Cloud Platform:** AWS
 **GitHub Repository URL:** Add your repository URL here  
 **Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
 
@@ -31,7 +31,7 @@ Prepare the Book Review App project and configure the provided Claude Code Agent
 
 Add a screenshot of the project `CLAUDE.md` showing the three-tier architecture, security boundaries, Terraform requirements, and human-approval rules.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-75.png)
 
 ---
 
@@ -39,7 +39,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform Engineer subagent configuration.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-76.png)
 
 ---
 
@@ -47,7 +47,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Architecture and Security Reviewer subagent configuration.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-77.png)
 
 ---
 
@@ -55,7 +55,7 @@ Add your screenshot here.
 
 Add a screenshot showing Terraform MCP connected and available.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-78.png)
 
 ---
 
@@ -63,7 +63,7 @@ Add your screenshot here.
 
 Add a screenshot showing the configured Claude Code validation hooks.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-79.png)
 
 ---
 
@@ -90,7 +90,7 @@ The diagram must show:
 
 ## Architecture Diagram
 
-Add the completed architecture diagram here.
+![paste file](screenshots/3tier-design.png)
 
 ---
 

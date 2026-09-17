@@ -250,7 +250,7 @@ Deploy and configure the Book Review App across the Web, Application, and Databa
 
 Add a screenshot showing the Book Review App homepage through the public endpoint.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-93.png)
 
 ---
 
@@ -258,7 +258,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful login or authentication.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-94.png)
 
 ---
 
@@ -266,7 +266,7 @@ Add your screenshot here.
 
 Add a screenshot showing the book listing or book details.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-95.png)
 
 ---
 

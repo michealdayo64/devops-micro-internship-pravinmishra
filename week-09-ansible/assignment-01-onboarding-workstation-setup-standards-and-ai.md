@@ -20,13 +20,13 @@ Create and activate an isolated `.venv` inside `ansible-onboarding/`, install `a
 
 #### Screenshot 1 — Terminal showing the activated `.venv` and successful `ansible --version` output
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-01.png)
 
 ---
 
 #### Screenshot 2 — Terminal showing successful `ansible-lint --version` output and `requirements.txt`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-02.png)
 
 ---
 
@@ -40,13 +40,17 @@ Install the Ansible, YAML, and Python VS Code extensions, and create `.vscode/se
 
 #### Screenshot 3 — VS Code Extensions panel showing Ansible, YAML, and Python installed
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-03.png)
+
+![paste file](screenshots/week-09-screenshot-04.png)
+
+![paste file](screenshots/week-09-screenshot-05.png)
 
 ---
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-05.png)
 
 ---
 
@@ -60,7 +64,7 @@ Create `ansible.cfg` in the project root with the team-friendly defaults and SSH
 
 #### Screenshot 5 — VS Code or terminal showing `ansible.cfg` in the project root with the supplied settings
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-06.png)
 
 ---
 

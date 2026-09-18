@@ -50,7 +50,7 @@ Install the Ansible, YAML, and Python VS Code extensions, and create `.vscode/se
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig`
 
-![paste file](screenshots/week-09-screenshot-05.png)
+![paste file](screenshots/week-09-screenshot-06.png)
 
 ---
 
@@ -64,7 +64,7 @@ Create `ansible.cfg` in the project root with the team-friendly defaults and SSH
 
 #### Screenshot 5 — VS Code or terminal showing `ansible.cfg` in the project root with the supplied settings
 
-![paste file](screenshots/week-09-screenshot-06.png)
+![paste file](screenshots/week-09-screenshot-07.png)
 
 ---
 
@@ -78,7 +78,7 @@ Generate or use an Ed25519 SSH key, load it into `ssh-agent`, and configure `~/.
 
 #### Screenshot 6 — Terminal showing `ssh-add -l` with the key loaded (do not expose private-key contents)
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-10.png)
 
 ---
 
@@ -92,13 +92,13 @@ Configure Git identity and the `main` default branch, install `pre-commit`, add 
 
 #### Screenshot 7 — Terminal showing `pre-commit install` output
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-11.png)
 
 ---
 
 #### Screenshot 8 — Terminal showing `pre-commit run --all-files` passing
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-11.png)
 
 ---
 
@@ -112,13 +112,13 @@ Document the workstation setup in `README.md`, including a "New Machine? Do This
 
 #### Screenshot 9 — Repository tree showing the required files
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-13.png)
 
 ---
 
 #### Screenshot 10 — `README.md` showing machine details and the "New Machine? Do This" checklist
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-14.png)
 
 ---
 
@@ -126,7 +126,15 @@ Add your screenshot here.
 
 State one thing that makes this setup team-friendly, and one pitfall you avoided (e.g. global pip, missing SSH agent). Note any corporate proxy or CA certificate steps, if applicable.
 
-Write your answer here.
+**Team-Friendly Feature:**
+The combination of `.venv`, `ansible.cfg`, and `.vscode/settings.json` provides a consistent development environment for the entire team. After cloning the repository, a teammate only needs to create the virtual environment and install the required dependencies to use the same Ansible version, linting rules, and editor settings without additional manual configuration.
+
+**Pitfall Avoided:**
+Ansible was installed inside an isolated `.venv` rather than the system Python environment, preventing dependency conflicts and keeping the workstation clean. During setup, pre-commit's default hook environments attempted to use `python3.14`, which was not available on the WSL2 Ubuntu system, where `python3.12` was installed. This was resolved by explicitly setting `language_version: python3.12` for each relevant hook in `.pre-commit-config.yaml`. The `.gitignore` file also prevents sensitive or environment-specific files, such as `.venv/` and SSH private keys, from being committed to the repository.
+
+**Corporate Proxy / CA Certificate Steps:**
+Not applicable. The setup was performed on a personal WSL2 Ubuntu environment with direct internet access, so no corporate proxy configuration or custom CA certificates were required.
+
 
 ---
 

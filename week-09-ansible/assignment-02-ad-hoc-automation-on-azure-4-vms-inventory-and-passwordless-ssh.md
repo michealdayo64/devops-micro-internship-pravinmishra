@@ -46,7 +46,7 @@ Connect to each of the four VMs as `azureuser` and run `hostname` remotely witho
 
 #### Screenshot 4 — Terminal showing successful `hostname` output from all four passwordless SSH tests
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-18.png)
 
 ---
 
@@ -60,7 +60,7 @@ Create `inventory.ini` mapping VM indices 0–1 to `[web]`, index 2 to `[app]`, 
 
 #### Screenshot 5 — Editor or terminal showing `inventory.ini` with the web, app, db, and all:vars sections
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-19.png)
 
 ---
 
@@ -74,25 +74,25 @@ Run `ping`, `whoami`, and `uptime` against all hosts; install and start Nginx on
 
 #### Screenshot 6 — Terminal showing `ansible ping` SUCCESS for all four hosts
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-20.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing `uptime` output for all four hosts
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-21.png)
 
 ---
 
 #### Screenshot 8 — Terminal showing Nginx installation and service start on the web group
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-22.png)
 
 ---
 
 #### Screenshot 9 — Terminal showing `htop` installation on all hosts and group-targeted command output
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-23.png)
 
 ---
 
@@ -100,7 +100,13 @@ Add your screenshot here.
 
 Describe an issue you faced and how you fixed it, what you learned, when you'd use an ad-hoc command instead of a playbook, and one challenge you faced during SSH or inventory setup.
 
-Write your answer here.
+- One of the first issues I faced was related to the SSH agent. I initially forgot to add my private SSH key to the SSH agent, which caused authentication problems when connecting from my control node to the managed nodes. I fixed this by starting the SSH agent and adding my private key using: `eval "$(ssh-agent -s)" ssh-add ~/.ssh/id_ed25519 ssh-add -l`
+
+- I learned that Ansible ad-hoc commands are useful for performing quick, one-time tasks, such as checking connectivity, installing a package, or retrieving system information. Playbooks, on the other hand, are reusable YAML files that are better suited for repeatable, multi-step automation and configuration management
+
+- Another challenge I faced occurred during SSH key generation. I created a private/public key pair with a passphrase, but this caused authentication difficulties when I was trying to use Ansible ad-hoc commands because the control node could not authenticate automatically with the managed nodes.
+
+To resolve the issue, I generated another SSH key pair without a passphrase and configured it for authentication with the managed nodes. This allowed my control node to communicate successfully with the managed nodes.
 
 ---
 

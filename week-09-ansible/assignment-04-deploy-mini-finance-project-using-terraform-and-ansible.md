@@ -20,7 +20,7 @@ Create the `mini-finance` project with separate `terraform/` and `ansible/` subd
 
 #### Screenshot 1 — Terminal or editor showing the complete `mini-finance` project tree
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-32.png)
 
 ---
 
@@ -34,19 +34,19 @@ Provision an Ubuntu 22.04 Standard_B1s VM with a public IP, SSH key authenticati
 
 #### Screenshot 2 — Terminal showing the end of a successful `terraform apply`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-34.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing `terraform output public_ip`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-35.png)
 
 ---
 
 #### Screenshot 4 — Terraform code or Azure Portal showing NSG inbound rules for ports 22 and 80
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-37.png)
 
 ---
 
@@ -60,7 +60,7 @@ Connect to the VM with SSH using the injected key and run `hostname` remotely wi
 
 #### Screenshot 5 — Terminal showing the successful passwordless SSH hostname check
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-36.png)
 
 ---
 
@@ -74,13 +74,13 @@ Create `ansible/inventory.ini` and a three-play `site.yml` that installs Nginx a
 
 #### Screenshot 6 — Editor showing `inventory.ini` and the three plays in `site.yml`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-38.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing `ansible-playbook -i inventory.ini site.yml` with HTTP 200, assertion OK, and no failures
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-39.png)
 
 ---
 
@@ -94,7 +94,7 @@ Confirm the Mini Finance site is publicly accessible and correctly served by Ngi
 
 #### Screenshot 8 — Browser showing the Mini Finance site loaded from `http://<public_ip>` with the URL visible
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-40.png)
 
 ---
 
@@ -102,7 +102,31 @@ Add your screenshot here.
 
 Describe an issue you faced and how you fixed it, and what you learned.
 
-Write your answer here.
+### Issue Faced
+
+I encountered an error while configuring the third play to verify the Mini Finance deployment. The `ansible.builtin.uri` task initially used `{{ hostvars[item].ansible_host }}` in the URL, which caused an `'item' is undefined` error because the task did not have a loop. After removing the loop reference, I received another error because my inventory did not define an `ansible_host` variable.
+
+### How I Fixed It
+
+I checked my inventory and found that the public IP address was used directly as the host under the `web` group:
+
+```ini
+[web]
+4.221.32.8
+```
+
+Since `ansible_host` was not defined, I changed the URL to:
+
+```yaml
+url: "http://{{ groups['web'][0] }}"
+```
+
+This allowed Ansible to retrieve the first host in the `web` group and send the HTTP request directly to `4.221.32.8`. The request then returned the expected HTTP `200` status, and the assertion passed successfully.
+
+### What I Learned
+
+I learned that Ansible variables must match the structure of the inventory. The `item` variable is only available when a task uses a loop, while `ansible_host` must be explicitly defined if it is going to be referenced. I also learned how `groups` and `hostvars` can be used to access inventory information and how `register` and `assert` can be combined to verify that a deployment is working correctly.
+
 
 ---
 

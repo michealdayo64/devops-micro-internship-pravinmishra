@@ -20,7 +20,7 @@ Create the `static-web` project directory with `inventory.ini`, `site.yml`, a `f
 
 #### Screenshot 1 — Terminal or editor showing the complete `static-web` folder layout
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-24.png)
 
 ---
 
@@ -34,7 +34,8 @@ Stage `index.html` from `https://github.com/pravinmishraaws/Azure-Static-Website
 
 #### Screenshot 2 — Editor or terminal showing `files/index.html` staged inside the `static-web` project
 
-Add your screenshot here.
+
+![paste file](screenshots/week-09-screenshot-26.png)
 
 ---
 
@@ -48,13 +49,13 @@ Write `site.yml` with three plays: Play 1 (install/start Nginx on `web`), Play 2
 
 #### Screenshot 3 — Editor showing the three plays in `site.yml`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-27.png)
 
 ---
 
 #### Screenshot 4 — Editor showing the copy task, file ownership/mode, handler, uri task, and HTTP 200 assertion
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-28.png)
 
 ---
 
@@ -68,13 +69,13 @@ Run `ansible-playbook -i inventory.ini site.yml` and confirm all plays complete 
 
 #### Screenshot 5 — Terminal showing the `ansible-playbook` run and final recap with OK/changed results and no failures
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-29.png)
 
 ---
 
 #### Screenshot 6 — Terminal showing the successful localhost URI verification results
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-30.png)
 
 ---
 
@@ -88,7 +89,7 @@ Confirm the deployed static website is reachable directly from a web-server publ
 
 #### Screenshot 7 — Browser showing the static website loaded from a web-server public IP
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-31.png)
 
 ---
 
@@ -96,7 +97,13 @@ Add your screenshot here.
 
 Describe an issue you faced and how you fixed it, what you learned, why installation and deployment were split into separate plays, and one benefit of using `copy` instead of cloning from Git directly.
 
-Write your answer here.
+1. The main issue I faced was an indentation error in my Ansible playbook. Under the uri task, I did not place the loop at the correct indentation level. This caused the error: Error while resolving value for 'url': 'item' is undefined. I fixed the issue by correcting the indentation and placing the loop at the appropriate level under the task.
+
+2. From this experience, I learned how powerful Ansible playbooks can be for achieving idempotency, consistency, and module reusability when automating infrastructure and application deployment.
+
+3. Installation and deployment were split into separate plays because they represent different stages of the automation process and use different Ansible modules and tasks. Separating them makes the playbook easier to organize, understand, troubleshoot, and maintain.
+
+4. One benefit of using the copy module instead of cloning directly from Git is that it can copy files from the local control machine to the target server without requiring the target server to access the Git repository. This can make file deployment simpler and useful when the required files are already available locally.
 
 ---
 

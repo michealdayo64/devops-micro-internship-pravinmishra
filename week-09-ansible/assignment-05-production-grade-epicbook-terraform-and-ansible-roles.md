@@ -20,7 +20,7 @@ Create the `epicbook-prod` project with `terraform/azure` or `terraform/aws`, `a
 
 #### Screenshot 1 — Terminal or editor showing the complete `epicbook-prod` project tree
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-41.png)
 
 ---
 
@@ -34,13 +34,13 @@ Provision one secure Ubuntu 22.04 VM with SSH key authentication, inbound SSH (2
 
 #### Screenshot 2 — Terminal showing successful `terraform apply` and `terraform output` with `public_ip` and `admin_user`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-42.png)
 
 ---
 
 #### Screenshot 3 — Terraform code or cloud console showing inbound rules for ports 22 and 80
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-43.png)
 
 ---
 
@@ -54,13 +54,13 @@ Create the `[web]` inventory using the Terraform `public_ip` and `admin_user` ou
 
 #### Screenshot 4 — Terminal showing the successful passwordless SSH hostname check
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-44.png)
 
 ---
 
 #### Screenshot 5 — Editor or terminal showing `inventory.ini` and a successful Ansible ping
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-45.png)
 
 ---
 
@@ -74,7 +74,7 @@ Create `site.yml` invoking the `common`, `nginx`, and `epicbook` roles in that e
 
 #### Screenshot 6 — Editor showing `ansible/site.yml` with the three roles in the required order
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-46.png)
 
 ---
 
@@ -88,7 +88,7 @@ Create `roles/common/tasks/main.yml` to update apt, upgrade packages, install ba
 
 #### Screenshot 7 — Editor showing `roles/common/tasks/main.yml`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-46.png)
 
 ---
 
@@ -102,7 +102,7 @@ Create the `nginx` role to install Nginx, deploy the `epicbook.conf.j2` template
 
 #### Screenshot 8 — Editor showing the Nginx role tasks, handler, and `epicbook.conf.j2` template
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-47.png)
 
 ---
 
@@ -122,7 +122,7 @@ Create the `epicbook` role to clone the repository to `{{ app_dest }}`, set owne
 
 #### Screenshot 10 — Editor showing `roles/epicbook/tasks/main.yml`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-49.png)
 
 ---
 
@@ -136,7 +136,7 @@ Define `app_repo`, `app_dest`, `app_user`, and `app_group` in `ansible/group_var
 
 #### Screenshot 11 — Editor showing `ansible/group_vars/web.yml`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-50.png)
 
 ---
 
@@ -150,7 +150,7 @@ Run `ansible-playbook -i inventory.ini site.yml` and confirm `common` → `nginx
 
 #### Screenshot 12 — Terminal showing the role-based Ansible run and final recap with `failed=0`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-51.png)
 
 ---
 
@@ -164,19 +164,19 @@ Confirm the EpicBook site loads with HTTP 200, inspect the Nginx configuration, 
 
 #### Screenshot 13 — Browser showing the EpicBook site with the public IP visible
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-52.png)
 
 ---
 
 #### Screenshot 14 — Terminal showing HTTP 200 and the Nginx site-file snippet
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-53.png)
 
 ---
 
 #### Screenshot 15 — Terminal showing the idempotent second Ansible run with mostly OK/UNCHANGED and `failed=0`
 
-Add your screenshot here.
+![paste file](screenshots/week-09-screenshot-54.png)
 
 ---
 

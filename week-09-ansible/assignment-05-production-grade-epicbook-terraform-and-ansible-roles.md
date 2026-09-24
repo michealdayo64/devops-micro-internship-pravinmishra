@@ -207,23 +207,6 @@ For a production environment, I would improve this further by using Ansible Vaul
 
 ## Goal
 
-Publish a LinkedIn post describing the Terraform + Ansible roles deployment (cloud chosen, role structure, Nginx deployment, idempotency result), and add a 4–6 line video reflection covering one challenge/fix, security issues observed, and your production remediation plan.
-
-Deployed a production-grade web application called epicbook which touches two important concepts in devops which are terraform and ansible and i am ready to tell you guys how i was able to achieve it.
-
-I started with designing the cloud infrastruction leveraging AWS cloud provider and all was defined as a code uing terraform. I defined the vpc with the required ip range, subnets with two avvailability zone, an ec2 where our application will be sitting on, rds database that help store our data and security groups that stand as a defend mechanism to protect our ec2 instance and database.
-
-To automate configurations and deployment in my ec2 instnance, i leverage ansible. With ansible i was able define inventory that connect my local node to my manage node. Then comes playbook where the real job comes in. I defined the base playbook that reference other plays. Then i switch to creating multiple plays called role structure. I started with the definition of the role `common` which runs the installation of the common dependencies needed with by the server. Then i defined the installation and configuration of nginx webserver which is another role  called `nginx`. nginx helps to server user request through port 80. Then lastly was application deployment called `epicbook` role where i install application dependencies, configure nginx to talk to localhost then configured mysql database. 
-
-One security issue I identified was the handling of the database password. Initially, the password could have been exposed through configuration files or potentially committed to GitHub.
-
-To address this, I moved the password into Ansible variable management instead of hard-coding it directly into my application deployment tasks. I also ensured that files containing sensitive variables were excluded from Git using .gitignore.
-
-To test the power of ansible, i ran the ansible playbook twice to see if my playbook is idempotent enough. No matter how much i run the playbook, it still gives me the same result. 
-
-With the help of terraform + ansible, deployment of infrastructure and server management can be automated which gives a good positive rise to idempotency, module reusability, consistency and isolation.
-
-
 ## Evidence
 
 #### LinkedIn Post URL

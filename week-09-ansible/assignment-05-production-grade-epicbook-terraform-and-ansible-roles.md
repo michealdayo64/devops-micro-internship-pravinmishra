@@ -184,7 +184,22 @@ Confirm the EpicBook site loads with HTTP 200, inspect the Nginx configuration, 
 
 Describe an issue you faced and how you fixed it, what you learned, any security issues you identified, and your production remediation plan.
 
-Write your answer here.
+## issue you faced and how you fixed it
+The main issue I faced was in the application deployment role, specifically during database configuration. After configuring the database and running the Ansible playbook successfully, I ran it again and encountered an error because some of the database tables already existed.
+
+I fixed this by making the database tasks idempotent, so Ansible checks the current state before making changes. If the required database objects already exist, the task skips them instead of attempting to recreate them. This allowed me to run the playbook repeatedly without causing database conflicts.
+
+## What i learned
+I learned the importance and power of Ansible roles. Roles helped me separate different responsibilities, such as server configuration, Nginx configuration, application deployment, and database configuration.
+
+This improved the organization and consistency of my automation and made the deployment easier to maintain and reuse. I also learned that good Ansible automation should be idempotent, meaning I should be able to run the same playbook multiple times and achieve the desired state without unnecessarily breaking or recreating existing resources.
+
+## any security issues you identified, and your production remediation plan
+One security issue I identified was the handling of the database password. Initially, the password could have been exposed through configuration files or potentially committed to GitHub.
+
+To address this, I moved the password into Ansible variable management instead of hard-coding it directly into my application deployment tasks. I also ensured that files containing sensitive variables were excluded from Git using .gitignore.
+
+For a production environment, I would improve this further by using Ansible Vault or a dedicated secrets manager rather than relying only on .gitignore. I would also rotate any credentials that may have been exposed, apply the principle of least privilege to the database user, restrict database network access to only the required application servers, and ensure that secrets are never stored in the Git repository.
 
 ---
 
@@ -194,25 +209,40 @@ Write your answer here.
 
 Publish a LinkedIn post describing the Terraform + Ansible roles deployment (cloud chosen, role structure, Nginx deployment, idempotency result), and add a 4–6 line video reflection covering one challenge/fix, security issues observed, and your production remediation plan.
 
+Deployed a production-grade web application called epicbook which touches two important concepts in devops which are terraform and ansible and i am ready to tell you guys how i was able to achieve it.
+
+I started with designing the cloud infrastruction leveraging AWS cloud provider and all was defined as a code uing terraform. I defined the vpc with the required ip range, subnets with two avvailability zone, an ec2 where our application will be sitting on, rds database that help store our data and security groups that stand as a defend mechanism to protect our ec2 instance and database.
+
+To automate configurations and deployment in my ec2 instnance, i leverage ansible. With ansible i was able define inventory that connect my local node to my manage node. Then comes playbook where the real job comes in. I defined the base playbook that reference other plays. Then i switch to creating multiple plays called role structure. I started with the definition of the role `common` which runs the installation of the common dependencies needed with by the server. Then i defined the installation and configuration of nginx webserver which is another role  called `nginx`. nginx helps to server user request through port 80. Then lastly was application deployment called `epicbook` role where i install application dependencies, configure nginx to talk to localhost then configured mysql database. 
+
+One security issue I identified was the handling of the database password. Initially, the password could have been exposed through configuration files or potentially committed to GitHub.
+
+To address this, I moved the password into Ansible variable management instead of hard-coding it directly into my application deployment tasks. I also ensured that files containing sensitive variables were excluded from Git using .gitignore.
+
+To test the power of ansible, i ran the ansible playbook twice to see if my playbook is idempotent enough. No matter how much i run the playbook, it still gives me the same result. 
+
+With the help of terraform + ansible, deployment of infrastructure and server management can be automated which gives a good positive rise to idempotency, module reusability, consistency and isolation.
+
+
 ## Evidence
 
 #### LinkedIn Post URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-terraform-ansible-ugcPost-7508809236265541632-nayT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/linked-02.png)
 
 ---
 
 #### Video reflection screenshot
 
-Add your screenshot here.
+![paste file](screenshots/linked-vid-01.png)
 
 ---
 
@@ -223,7 +253,7 @@ Add your screenshot here.
 
 ---
 
-# Completion Checklist
+# Completion Checklis
 
 - [ ] Task 1: `epicbook-prod` project and role structure created (Screenshot 1)
 - [ ] Task 2: Cloud VM provisioned with Terraform (Screenshots 2–3)

@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/Azure-Static-Website` into Azure Repo
 
 #### Screenshot 1 — Azure Repos showing the imported repository files with `index.html` visible
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-08.png)
 
 ---
 
@@ -34,13 +34,13 @@ Provision a Linux VM with Terraform (ports 22/80 open), then use Ansible to inst
 
 #### Screenshot 2 — Terraform output or cloud console showing the running VM and public IP
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-09.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-10.png)
 
 ---
 
@@ -54,7 +54,7 @@ Create the password-based SSH Service Connection `ubuntu-nginx-ssh` pointing to 
 
 #### Screenshot 4 — SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-11.png)
 
 ---
 
@@ -68,7 +68,7 @@ Write a pipeline triggered on `main` that checks out the repo, copies files to `
 
 #### Screenshot 5 — Pipeline YAML definition open in the Azure DevOps editor
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-12.png)
 
 ---
 

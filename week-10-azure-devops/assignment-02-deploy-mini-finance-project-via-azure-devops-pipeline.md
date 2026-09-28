@@ -82,13 +82,13 @@ Confirm the pipeline run succeeded (checkout, SSH connection, file transfer, rem
 
 #### Screenshot 6 — Successful Azure DevOps pipeline run log summary
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-13.png)
 
 ---
 
 #### Screenshot 7 — Browser showing the deployed website with the VM public IP visible
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-14.png)
 
 ---
 
@@ -96,7 +96,9 @@ Add your screenshot here.
 
 Include the VM public URL. Describe any issue you faced and how you fixed it (e.g. parallelism/agent-pool issues).
 
-Write your answer here.
+**VM Public URL:** http://3.238.151.25/
+
+One of the major issues I faced was enabling secure communication between my Azure DevOps self-hosted agent pool and the virtual machine during pipeline automation. The pipeline initially failed because the agent could not establish an SSH connection to the VM. I resolved this by updating the VM's security group to allow inbound SSH traffic from the agent pool's network. After configuring the appropriate security rules, the agent was able to securely connect to the VM, allowing the pipeline to successfully deploy the static application.
 
 ---
 

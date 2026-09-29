@@ -110,13 +110,13 @@ Publish a LinkedIn post about the completed assignment, mentioning the Build/Tes
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/feed/update/urn:li:activity:7510831807404240896/
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-Add your screenshot here.
+![paste file](screenshots/linkedIn-01.png)
 
 ---
 

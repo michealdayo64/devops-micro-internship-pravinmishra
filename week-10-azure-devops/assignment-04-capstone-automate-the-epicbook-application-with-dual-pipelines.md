@@ -20,7 +20,7 @@ Prepare `infra-epicbook` (Terraform for network, frontend/backend VMs, MySQL, wi
 
 #### Screenshot 1 — Both repositories showing their required files and separation of responsibilities
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-23.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create and validate an Azure Resource Manager SPN service connection (Tenant ID,
 
 #### Screenshot 2 — Azure Resource Manager service connection showing successful configuration with secrets hidden
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-24.png)
 
 ---
 
@@ -48,7 +48,7 @@ Create a YAML pipeline for `infra-epicbook` that authenticates via the SPN conne
 
 #### Screenshot 3 — Infra Pipeline run showing `terraform apply` completion and the `app_public_ip` and `mysql_fqdn` outputs
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-25.png)
 
 ---
 

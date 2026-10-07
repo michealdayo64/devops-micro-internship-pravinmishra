@@ -54,7 +54,9 @@ Create a YAML pipeline for `infra-epicbook` that authenticates via the SPN conne
 
 #### Screenshot 4 — Azure Portal confirming the provisioned resources
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-27.png)
+
+![paste file](screenshots/screenshot-28.png)
 
 ---
 
@@ -68,13 +70,13 @@ Upload the SSH private key to Azure DevOps Secure Files, create a YAML pipeline 
 
 #### Screenshot 5 — App Pipeline run summary showing successful completion
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-26.png)
 
 ---
 
 #### Screenshot 6 — Ansible playbook output showing successful configuration with `failed=0`
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-30.png)
 
 ---
 
@@ -88,7 +90,7 @@ Confirm both pipelines succeeded, the EpicBook application loads through the fro
 
 #### Screenshot 7 — Browser displaying the running EpicBook application with the frontend public IP visible
 
-Add your screenshot here.
+![paste file](screenshots/screenshot-31.png)
 
 ---
 

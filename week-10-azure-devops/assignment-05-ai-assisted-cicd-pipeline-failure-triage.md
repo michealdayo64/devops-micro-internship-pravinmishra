@@ -134,7 +134,7 @@ Apply the recommended fix yourself, push it, confirm the pipeline succeeds again
 
 Explain, in your own words, why the skill was allowed to gather evidence and diagnose the failure but was never allowed to re-trigger the pipeline or apply the fix itself.
 
-Add your answer here
+The skill was allowed to gather evidence and diagnose the failure because its role was to investigate the problem and identify the root cause, not to make changes to the system. The .claude.md file defined safety rules that prohibited the skill from re-triggering the pipeline or applying fixes automatically. This ensured that potentially risky actions remained under human control, allowing me to review the diagnosis, approve the proposed solution, and decide when to rerun the pipeline.
 
 ---
 

@@ -114,13 +114,13 @@ Publish a LinkedIn post about the completed capstone project, mentioning the two
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_how-do-you-deploy-new-features-to-a-running-ugcPost-7514953458089824256-Nmcm/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-Add your screenshot here.
+![paste file](screenshots/linkedIn-02.png)
 
 ---
 

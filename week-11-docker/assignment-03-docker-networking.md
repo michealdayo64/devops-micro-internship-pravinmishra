@@ -20,37 +20,37 @@ List Docker networks, verify/pull the Nginx image, run an Nginx container (`mywe
 
 #### Screenshot 1 — Output of `docker network ls`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-19.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker images`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-20.png)
 
 ---
 
 #### Screenshot 3 — Output of `docker search nginx`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-22.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker pull nginx` (if applicable)
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-23.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the running `myweb` container
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-21.png)
 
 ---
 
 #### Screenshot 6 — Browser displaying the Nginx Welcome Page using the Public IP address
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-24.png)
 
 ---
 
@@ -64,13 +64,13 @@ Create a custom bridge network `mynetwork`, build and run a Node/Express `fronte
 
 #### Screenshot 1 — Output of `docker network create mynetwork`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-26.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker network ls`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-25.png)
 
 ---
 
@@ -100,19 +100,19 @@ Add your screenshot here.
 
 #### Screenshot 7 — Output of `docker network inspect mynetwork`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-29.png)
 
 ---
 
 #### Screenshot 8 — Successful `curl http://<Public-IP>` showing "Hello from Frontend"
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-33.png)
 
 ---
 
 #### Screenshot 9 — Successful `curl backend` output from the frontend container showing the Nginx Welcome Page
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-32.png)
 
 ---
 
@@ -126,13 +126,13 @@ Build a three-tier app (frontend, backend, MongoDB) across `backend-network` (ba
 
 #### Screenshot 1 — Creation of `backend-network`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-27.png)
 
 ---
 
 #### Screenshot 2 — Creation of `frontend-network`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-28.png)
 
 ---
 
@@ -174,19 +174,19 @@ Add your screenshot here.
 
 #### Screenshot 9 — Output of `docker network inspect backend-network`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-30.png)
 
 ---
 
 #### Screenshot 10 — Output of `docker network inspect frontend-network`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-31.png)
 
 ---
 
 #### Screenshot 11 — Browser showing the frontend application
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-34.png)
 
 ---
 
@@ -224,31 +224,31 @@ Deploy an Nginx container (`fastapp`) using Host Network Mode and verify it's re
 
 #### Screenshot 1 — Output of `docker run --network host`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-35.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker ps` showing the running `fastapp` container
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-36.png)
 
 ---
 
 #### Screenshot 3 — Browser or terminal displaying the Nginx Welcome Page
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-34.png)
 
 ---
 
 #### Screenshot 4 — Output of `docker inspect fastapp | grep "NetworkMode"`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-37.png)
 
 ---
 
 #### Screenshot 5 — Successful cleanup showing `docker stop fastapp` and `docker rm fastapp`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-38.png)
 
 ---
 

@@ -20,7 +20,7 @@ Clone `https://github.com/pravinmishraaws/my-react-app.git` and create a `.docke
 
 #### Screenshot 1 — Contents of the `.dockerignore` file
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-11.png)
 
 ---
 
@@ -34,13 +34,13 @@ Create `Dockerfile.single`, build `react-single`, and run it on port 3000.
 
 #### Screenshot 2 — Contents of `Dockerfile.single`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-12.png)
 
 ---
 
 #### Screenshot 3 — Browser displaying the application running from the single-stage container
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-13.png)
 
 ---
 
@@ -54,13 +54,13 @@ Create a multi-stage Dockerfile with separate build and Nginx runtime stages, bu
 
 #### Screenshot 4 — Contents of the multi-stage Dockerfile
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-14.png)
 
 ---
 
 #### Screenshot 5 — Browser displaying the application running from the multi-stage container
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-15.png)
 
 ---
 
@@ -74,7 +74,7 @@ Compare the single-stage and multi-stage image sizes and calculate the percentag
 
 #### Screenshot 6 — Docker image list showing both image sizes
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-16.png)
 
 ---
 
@@ -88,7 +88,7 @@ Write a 5–8 line analysis covering the percentage reduction, security benefits
 
 #### Screenshot 7 — Analysis included in your submission document
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-17.png)
 
 ---
 
@@ -96,7 +96,13 @@ Add your screenshot here.
 
 Write your analysis here.
 
-Write your answer here.
+The multi-stage Docker build reduced the image size from 505 MB to 26.6 MB, achieving a 94.7% reduction.
+This improves security by excluding unnecessary development tools, npm packages, and the Node.js build environment from the production image.
+The reduced number of installed components minimizes the container’s attack surface and potential vulnerability exposure.
+The smaller image requires less bandwidth and storage, enabling faster distribution from container registries.
+It can also accelerate deployment, container startup workflows, and scaling operations.
+For build caching, package*.json was copied before the application source code, and npm ci was executed before COPY . ..
+This allows Docker to reuse the dependency-installation layer when only application source files change, reducing rebuild time.
 
 ---
 
@@ -106,7 +112,7 @@ Write your answer here.
 
 Optionally configure an Nginx health check, cache headers, parameterized ports via environment variables, or a lighter runtime image, and compare results.
 
-> Screenshot optional.
+![paste file](screenshots/Screenshot-18.png)
 
 ---
 
@@ -122,13 +128,13 @@ Create a LinkedIn post describing what you built, what a multi-stage Docker buil
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_docker-devops-containerization-ugcPost-7515595709090357248-vIwE/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/linkedin-02.png)
 
 ---
 

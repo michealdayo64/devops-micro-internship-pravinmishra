@@ -170,13 +170,13 @@ Create a LinkedIn post covering the assignment, Docker Hub repository, steps per
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-docker-dockerhub-ugcPost-7516192242319945728-xwr7/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/linkedIn-04.png)
 
 ---
 

@@ -76,25 +76,25 @@ Create a custom bridge network `mynetwork`, build and run a Node/Express `fronte
 
 #### Screenshot 3 — Frontend Dockerfile
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-54.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker build` for the frontend
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-55.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the frontend container
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-56.png)
 
 ---
 
 #### Screenshot 6 — Output of `docker ps` showing both frontend and backend containers
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-56.png)
 
 ---
 
@@ -138,7 +138,7 @@ Build a three-tier app (frontend, backend, MongoDB) across `backend-network` (ba
 
 #### Screenshot 3 — Project folder structure
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-49.png)
 
 ---
 

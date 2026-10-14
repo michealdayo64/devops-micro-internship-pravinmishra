@@ -20,49 +20,49 @@ Create a Docker Hub repository (`my-react-app`), log in from the CLI, tag and pu
 
 #### Screenshot 1 — Docker Hub repository (`my-react-app`)
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-61.png)
 
 ---
 
 #### Screenshot 2 — Successful `docker login`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-62.png)
 
 ---
 
 #### Screenshot 3 — Successful `docker tag`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-63.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker push`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-64.png)
 
 ---
 
 #### Screenshot 5 — Docker Hub repository showing the uploaded image
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-65.png)
 
 ---
 
 #### Screenshot 6 — Successful `docker pull`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-66.png)
 
 ---
 
 #### Screenshot 7 — Output of `docker ps`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-67.png)
 
 ---
 
 #### Screenshot 8 — Browser displaying the running React application
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-68.png)
 
 ---
 
@@ -78,13 +78,13 @@ Create a LinkedIn post covering the assignment title, the Docker Hub repository 
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-docker-dockerhub-ugcPost-7516192242319945728-xwr7/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![paste file](screenshots/linkedIn-04.png)
 
 ---
 

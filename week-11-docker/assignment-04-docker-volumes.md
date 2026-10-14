@@ -20,61 +20,61 @@ Run an Nginx container (`myweb`) with a Bind Mount from `~/nginx-logs` to `/var/
 
 #### Screenshot 1 — Output of `docker images`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-39.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker search nginx`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-40.png)
 
 ---
 
 #### Screenshot 3 — Successful `docker pull nginx` (if applicable)
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-41.png)
 
 ---
 
 #### Screenshot 4 — Creation of the `~/nginx-logs` directory
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-42.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker run` with the Bind Mount
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-43.png)
 
 ---
 
 #### Screenshot 6 — Output of `docker ps` showing the running `myweb` container
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-44.png)
 
 ---
 
 #### Screenshot 7 — Browser displaying the Nginx Welcome Page
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-45.png)
 
 ---
 
 #### Screenshot 8 — Output of `ls ~/nginx-logs` showing `access.log` and `error.log`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-46.png)
 
 ---
 
 #### Screenshot 9 — Successful removal of the container
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-47.png)
 
 ---
 
 #### Screenshot 10 — Output of `ls ~/nginx-logs` confirming the log files remain after the container has been removed
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-48.png)
 
 ---
 
@@ -88,73 +88,73 @@ Create a custom network `mynetwork` and a Docker volume `shared-data`, build and
 
 #### Screenshot 1 — Project folder structure
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-49.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker network create mynetwork`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-50.png)
 
 ---
 
 #### Screenshot 3 — Output of `docker volume create shared-data`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-51.png)
 
 ---
 
 #### Screenshot 4 — Backend Dockerfile
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-52.png)
 
 ---
 
 #### Screenshot 5 — Successful backend image build
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-53.png)
 
 ---
 
 #### Screenshot 6 — Frontend Dockerfile
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-54.png)
 
 ---
 
 #### Screenshot 7 — Successful frontend image build
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-55.png)
 
 ---
 
 #### Screenshot 8 — Output of `docker ps` showing both containers
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-56.png)
 
 ---
 
 #### Screenshot 9 — Successful execution of `docker exec backend curl http://localhost/write`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-57.png)
 
 ---
 
 #### Screenshot 10 — Browser displaying "Hello from Backend!"
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-58.png)
 
 ---
 
 #### Screenshot 11 — Browser displaying "Test Data 1" after the first update
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-59.png)
 
 ---
 
 #### Screenshot 12 — Browser displaying "Test Data 2 - New Update" after the second update
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-60.png)
 
 ---
 

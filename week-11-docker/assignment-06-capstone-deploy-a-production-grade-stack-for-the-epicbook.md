@@ -20,13 +20,13 @@ Explore the `theepicbook` repository, identify its components (UI, API, DB, work
 
 #### Deliverable — `docs/01-architecture-diagram.png`
 
-Add your diagram or link here.
+![paste file](screenshots/epicbook_diagram.png)
 
 ---
 
 #### Deliverable — `docs/02-env-and-ports.md`
 
-Add your content or link here.
+![paste file](screenshots/Screenshot-69.png)
 
 ---
 
@@ -40,7 +40,68 @@ Create minimal multi-stage Dockerfiles for the frontend and backend services, wi
 
 #### Deliverable — `frontend/Dockerfile`, `backend/Dockerfile`, and `.dockerignore` files, with a note on layer optimizations and security benefits
 
-Add your content or link here.
+### Frontend DockerFile
+```
+FROM nginx:alpine
+COPY public /usr/share/nginx/html
+EXPOSE 3000
+```
+
+### Backend Docker File
+```
+# ---------- Stage 1: install production dependencies ----------
+FROM node:20-alpine AS deps
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci --omit=dev
+
+# ---------- Stage 2: runtime image ----------
+FROM node:20-alpine AS runtime
+ENV NODE_ENV=production
+WORKDIR /app
+RUN apk add --no-cache curl
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+USER node
+EXPOSE 3001
+CMD ["node", "server.js"]
+
+```
+
+### .dockerignore
+```
+.git
+.env
+node_modules
+npm-debug.log
+Dockerfile*
+.dockerignore
+```
+
+### Layer Optimization
+```
+Lightweight base images: Alpine-based images reduce unnecessary operating-system packages.
+
+Multi-stage builds: Build tools and intermediate artifacts are kept out of the final image where they are not needed at runtime.
+
+Dependency-layer caching: Copying package manifests before application source code allows Docker to reuse the dependency installation layer when dependencies have not changed.
+
+Production dependencies: The backend should install only required production dependencies in its final image.
+
+Build context reduction: A .dockerignore file prevents unnecessary files from being sent to the Docker build context.
+
+These practices can reduce build time, image size, image transfer time, and deployment overhead.
+```
+
+### Security Benefit
+Multi-stage builds improve the security posture of the application by reducing the components included in the production image.
+
 
 ---
 
@@ -54,7 +115,68 @@ Author `docker-compose.yml` defining the reverse-proxy, frontend, backend, and d
 
 #### Deliverable — `docker-compose.yml`
 
-Add your content or link here.
+```
+services:
+  reverse-proxy:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./proxy/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - front-tier
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    image: epicbook-frontend:1.0
+    networks:
+      - front-tier
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    image: epicbook-backend:1.0
+    environment:
+      NODE_ENV: production
+      PORT: "3001:80 "
+      JAWSDB_URL: mysql://${DB_USER}:${DB_PASSWORD}@database:3306/${DB_NAME}
+    depends_on:
+      - database
+    networks:
+      - front-tier
+      - back-tier
+    restart: unless-stopped
+
+  database:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db/BuyTheBook_Schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./db/author_seed.sql:/docker-entrypoint-initdb.d/02-authors.sql:ro
+      - ./db/books_seed.sql:/docker-entrypoint-initdb.d/03-books.sql:ro
+    networks:
+      - back-tier
+    restart: unless-stopped
+
+networks:
+  front-tier:
+  back-tier:
+    internal: true
+
+volumes:
+  db_data:
+
+```
 
 ---
 

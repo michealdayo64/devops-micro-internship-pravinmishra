@@ -1181,13 +1181,13 @@ Publish a 6–10 line LinkedIn post covering the architectural decision that mos
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+linkedin.com/posts/micheal-omotosho-577230199_devops-docker-dockercompose-share-7518753762862280705-U1gH/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7518753764627890177&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text body and a deployment verification image
 
-Add your screenshot here.
+![paste file](screenshots/linkedIn-05.png)
 
 ---
 

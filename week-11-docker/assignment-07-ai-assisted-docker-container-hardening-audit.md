@@ -20,7 +20,7 @@ Confirm your production-grade EpicBook containers from this week's capstone are 
 
 #### Screenshot 1 — `docker ps` showing your running EpicBook application container
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-75.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` in your workspace that tells Claude this project only ever 
 
 #### Screenshot 2 — `CLAUDE.md` open in VS Code showing the project overview, hardening workflow, and safety rules
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-76.png)
 
 ---
 
@@ -48,7 +48,7 @@ Ask Claude Code to inspect your running container using only read-only Docker co
 
 #### Screenshot 3 — Claude's proposed audit plan and read-only inspection
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-77.png)
 
 ---
 
@@ -62,13 +62,13 @@ Write a Bash script that runs `docker inspect` and `docker image inspect` agains
 
 #### Screenshot 4 — Your audit script open in an editor, showing the six check functions
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-78.png)
 
 ---
 
 #### Screenshot 5 — Terminal output of `bash -n` confirming the script has no syntax errors, and `ls -l` showing it is executable
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-79.png)
 
 ---
 
@@ -82,7 +82,7 @@ Run the script against your running EpicBook container and record the results ho
 
 #### Screenshot 6 — Script output showing your Full Name and all six check results
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-80.png)
 
 ---
 
@@ -96,13 +96,13 @@ Turn the script into a Claude Code skill restricted to read-only tools, and run 
 
 #### Screenshot 7 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-81.png)
 
 ---
 
 #### Screenshot 8 — `/docker-audit` output showing the findings and Claude's recommended fix
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-82.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add your screenshot here.
 
 #### Screenshot 10 — `docker build` and `docker run` succeeding with the rebuilt image
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-83.png)
 
 ---
 

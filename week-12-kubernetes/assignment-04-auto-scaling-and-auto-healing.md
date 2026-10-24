@@ -20,7 +20,7 @@ Create the `~/k8s-labs/autoscaling` working directory.
 
 #### Screenshot 1 — Terminal showing the `autoscaling` directory
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-16.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `demo-autohealing` (two replicas), delete one Pod, and confirm the desire
 
 #### Screenshot 2 — Deleted Pod and replacement Pod with the replica count restored
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-17.png)
 
 ---
 
@@ -48,7 +48,7 @@ Deploy `nginx-deployment` with CPU `requests: 100m` / `limits: 200m`, then enabl
 
 #### Screenshot 3 — Deployment resources plus successful Metrics Server status
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-18.png)
 
 ---
 
@@ -62,7 +62,7 @@ Create an HPA (imperatively via `kubectl autoscale` or declaratively via `autosc
 
 #### Screenshot 4 — `kubectl get hpa` and `kubectl describe hpa nginx-hpa` output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-19.png)
 
 ---
 
@@ -76,7 +76,7 @@ Generate CPU load inside an NGINX Pod (`yes > /dev/null`) and monitor whether th
 
 #### Screenshot 5 — HPA output showing current metrics and any replica increase
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-20.png)
 
 ---
 

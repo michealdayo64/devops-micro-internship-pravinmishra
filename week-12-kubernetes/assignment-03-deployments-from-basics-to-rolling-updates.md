@@ -20,7 +20,7 @@ Create the `~/k8s-labs/deployments` working directory.
 
 #### Screenshot 1 — Terminal showing the `~/k8s-labs/deployments` working directory
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-11.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-deployment.yaml` with two replicas and image `nginx:1.21.1`, apply
 
 #### Screenshot 2 — Manifest plus `kubectl` output showing the Deployment, ReplicaSet, and two Pods
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-12.png)
 
 ---
 
@@ -48,7 +48,7 @@ Add `strategy.rollingUpdate` with `maxSurge: 1` and `maxUnavailable: 0` to the D
 
 #### Screenshot 3 — Deployment YAML showing the RollingUpdate strategy and successful apply output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-13.png)
 
 ---
 
@@ -62,7 +62,7 @@ Update the image to `nginx:1.23.1` with `kubectl set image`, watch the rollout, 
 
 #### Screenshot 4 — Rolling-update status, multiple ReplicaSets, and successful rollback/history output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-14.png)
 
 ---
 
@@ -76,7 +76,7 @@ Scale to five replicas, verify, then scale back to two.
 
 #### Screenshot 5 — Terminal showing the scale-up and scale-down results
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-15.png)
 
 ---
 
@@ -84,7 +84,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+The lab demonstrated how Kubernetes `kubectl` manages deployments, particularly **rolling updates and rollbacks**. It showed how to update application versions with minimal downtime and quickly revert to a previous stable version when errors or bugs occur. The lab also highlighted Kubernetes' ability to scale applications to handle increased workloads and maintain application availability through self-healing mechanisms, such as automatically restarting failed containers.
 
 ---
 

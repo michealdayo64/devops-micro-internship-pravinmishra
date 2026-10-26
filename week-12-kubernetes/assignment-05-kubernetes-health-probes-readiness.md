@@ -20,7 +20,7 @@ Deploy two NGINX Pods without probes (`00-nginx-deploy-baseline.yaml`) to establ
 
 #### Screenshot 1 — Baseline manifest and healthy two-Pod rollout output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-21.png)
 
 ---
 
@@ -34,7 +34,7 @@ Add an HTTP readiness probe on `/` port 80 (`01-nginx-deploy-readiness.yaml`) an
 
 #### Screenshot 2 — Pod description showing the readiness probe and `Ready=True`
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-22.png)
 
 ---
 
@@ -48,7 +48,9 @@ Change the readiness path to `/does-not-exist`, observe `NotReady` and a stalled
 
 #### Screenshot 3 — `NotReady` conditions followed by a successful fixed rollout
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-23.png)
+
+![paste file](screenshots/Screenshot-24.png)
 
 ---
 
@@ -62,7 +64,7 @@ Perform a good image update to `nginx:1.21.2`, then attempt an update to `nginx:
 
 #### Screenshot 4 — Successful good rollout, stalled broken rollout, and successful recovery
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-26.png)
 
 ---
 
@@ -76,7 +78,7 @@ Review probe timing/thresholds and retain or delete the Deployment.
 
 #### Screenshot 5 — Final healthy Pod state or optional cleanup output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-25.png)
 
 ---
 
@@ -84,7 +86,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+The lab demonstrated the Kubernetes Readiness Probe feature by comparing a pod that was ready to serve requests with one that was not ready. I learned that a running pod does not necessarily mean the application is ready to handle traffic. A readiness probe checks whether an application is ready to serve HTTP requests and helps Kubernetes determine whether a pod should receive traffic.
 
 ---
 

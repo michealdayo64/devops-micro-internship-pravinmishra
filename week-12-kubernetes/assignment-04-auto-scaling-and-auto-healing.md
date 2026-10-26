@@ -84,7 +84,7 @@ Generate CPU load inside an NGINX Pod (`yes > /dev/null`) and monitor whether th
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+The lab demonstrated the implementation of Kubernetes auto-healing and auto-scaling. Two separate deployment YAML files were created to demonstrate these capabilities. The auto-healing deployment maintained the desired number of pod replicas by automatically recreating failed or deleted pods. The auto-scaling deployment was configured with a Horizontal Pod Autoscaler (HPA) and Metrics Server to monitor resource utilization and workload demands. Based on these metrics, the HPA automatically scaled the number of pod replicas up or down to meet application demands and optimize resource utilization.
 
 ---
 

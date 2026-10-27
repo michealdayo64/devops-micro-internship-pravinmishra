@@ -20,7 +20,7 @@ Create two healthy, labeled NGINX Pods (readiness + liveness probes) as Service 
 
 #### Screenshot 1 — Two Ready Pods with labels and IPs
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-32.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-svc` (type `ClusterIP`, selector `app: nginx`, port 80) and inspec
 
 #### Screenshot 2 — Service ClusterIP plus populated Endpoints and EndpointSlices
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-33.png)
 
 ---
 
@@ -48,7 +48,7 @@ Create a BusyBox `tester` Pod and call `nginx-svc` by short name, ClusterIP, and
 
 #### Screenshot 3 — Successful `wget` responses and `nslookup` output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-34.png)
 
 ---
 
@@ -62,7 +62,7 @@ Change the Service selector to `app: does-not-match`, confirm endpoints become e
 
 #### Screenshot 4 — Empty endpoints during failure and restored endpoints after the fix
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-35.png)
 
 ---
 
@@ -76,7 +76,7 @@ Scale to one replica, apply a broken readiness patch, confirm the NotReady Pod i
 
 #### Screenshot 5 — NotReady Pod with excluded endpoint, followed by restored endpoint membership
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-36.png)
 
 ---
 
@@ -90,7 +90,7 @@ Verify the Service path, then optionally delete `tester` and `nginx-svc`.
 
 #### Screenshot 6 — Final verification or optional cleanup output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-37.png)
 
 ---
 
@@ -98,7 +98,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+The lab demonstrated the implementation of a Kubernetes ClusterIP Service for internal communication between pods. I created a ClusterIP Service with a selector label targeting two Nginx pods. I then tested connectivity by accessing the service's ClusterIP from within the cluster and running a `wget` command to send a request to the Nginx service. The successful response confirmed that the service was correctly configured and enabled internal communication with the Nginx pods.
 
 ---
 

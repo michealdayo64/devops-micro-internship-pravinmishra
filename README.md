@@ -141,7 +141,7 @@ Week 10 → Azure DevOps CI/CD
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-terraform-ansible-ugcPost-7508809236265541632-nayT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/deploying-epicbook-on-aws-with-terraform-and-ansible-a-practical-devops-journey-ff1fce7dcd05 |
 | 10 | Azure DevOps (CI/CD) | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_how-do-you-deploy-new-features-to-a-running-ugcPost-7514953458089824256-Nmcm/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/from-manual-provisioning-to-automated-deployment-with-terraform-ansible-aws-and-azure-devops-7d24e117953c |
-| 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
+| 11 | Docker | ✅ Completed | ✅ Solved | linkedin.com/posts/micheal-omotosho-577230199_devops-docker-dockercompose-share-7518753762862280705-U1gH/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7518753764627890177&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 

@@ -20,7 +20,7 @@ Create resource group `rg-aks-lb-lab` and a one-node AKS cluster `aks-lb-lab` (`
 
 #### Screenshot 1 — AKS creation result and Ready node output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-47.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create two healthy, probed NGINX Pods for the public Service.
 
 #### Screenshot 2 — Successful rollout and two Ready Pods
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-48.png)
 
 ---
 
@@ -48,7 +48,7 @@ Create `nginx-svc-lb` (type `LoadBalancer`, port 80), wait for `EXTERNAL-IP`, an
 
 #### Screenshot 3 — Service with public `EXTERNAL-IP` and successful `curl` output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-49.png)
 
 ---
 
@@ -62,7 +62,9 @@ Apply a broken readiness patch, confirm the Pod leaves the endpoint set and publ
 
 #### Screenshot 4 — Endpoint changes and public `curl` behavior before and after recovery
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-50.png)
+
+![paste file](screenshots/Screenshot-51.png)
 
 ---
 
@@ -76,7 +78,7 @@ Scale to four replicas and confirm the endpoint set grows while the public IP st
 
 #### Screenshot 5 — Four replicas/endpoints behind the unchanged public endpoint
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-52.png)
 
 ---
 
@@ -98,7 +100,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+The lab demonstrated the implementation of a Kubernetes LoadBalancer Service using an AWS EKS cluster. I deployed two Nginx pods with rolling update, liveness probe, and readiness probe configurations, then created a separate LoadBalancer Service with a selector targeting the Nginx pods. AWS provisioned an external public IP address, which I tested using a `curl` command from my laptop to verify external access to the application. I also intentionally introduced a readiness probe error to observe how Kubernetes handled pod readiness and service endpoints. This lab helped me understand how Kubernetes LoadBalancer Services expose applications externally and how readiness probes influence traffic routing to pods.
 
 ---
 

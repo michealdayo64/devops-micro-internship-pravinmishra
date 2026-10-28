@@ -20,7 +20,7 @@ Create healthy, labeled NGINX Pods (readiness + liveness probes) for the NodePor
 
 #### Screenshot 1 — Healthy NGINX Pods before Service creation
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-38.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-svc-nodeport` (type `NodePort`, port 80, `nodePort: 30080`) and in
 
 #### Screenshot 2 — Service output showing `80:30080` and populated endpoints
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-39.png)
 
 ---
 
@@ -48,7 +48,7 @@ Find a reachable node IP and test `<NODE_IP>:30080` externally (curl) and intern
 
 #### Screenshot 3 — Successful external or internal NodePort response
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-41.png)
 
 ---
 
@@ -62,7 +62,7 @@ Use the appropriate fallback for your cluster environment (`minikube service --u
 
 #### Screenshot 4 — Minikube helper URL or local validation result
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-43.png)
 
 ---
 
@@ -76,7 +76,9 @@ Change the selector to `app: does-not-match`, confirm endpoints empty and the re
 
 #### Screenshot 5 — Empty then restored endpoint output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-44.png)
+
+![paste file](screenshots/Screenshot-45.png)
 
 ---
 
@@ -90,7 +92,7 @@ Delete one backend Pod while calling the NodePort from another terminal, confirm
 
 #### Screenshot 6 — Pod replacement while NodePort remains available
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-46.png)
 
 ---
 
@@ -98,7 +100,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+The lab demonstrated the implementation of a Kubernetes NodePort Service, which enables external access to applications running inside a Kubernetes cluster through a node's IP address and designated port. I created a NodePort Service YAML file and configured a selector to target two running pods. I then deployed a tester pod to verify connectivity by accessing the pods through their internal IP addresses. This lab helped me understand how Kubernetes services expose applications and facilitate communication between pods and external clients.
 
 ---
 

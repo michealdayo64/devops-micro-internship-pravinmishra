@@ -20,7 +20,7 @@ Select a Kubernetes platform, confirm `kubectl` (and Helm, if used) can communic
 
 #### Screenshot 1 — Terminal showing the active Kubernetes context and Ready nodes
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-53.png)
 
 ---
 
@@ -54,13 +54,13 @@ Externalize non-sensitive configuration into ConfigMaps and sensitive values (da
 
 #### Screenshot 4 — ConfigMap manifest or `kubectl describe configmap` output showing non-sensitive configuration
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-54.png)
 
 ---
 
 #### Screenshot 5 — Secret object usage with sensitive values hidden or redacted
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-55.png)
 
 ---
 
@@ -74,13 +74,13 @@ Provide a persistent MySQL database (managed service or StatefulSet + PVC) reach
 
 #### Screenshot 6 — Managed MySQL status or MySQL StatefulSet/PVC status
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-56.png)
 
 ---
 
 #### Screenshot 7 — Successful database connectivity or schema verification with credentials hidden
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-57.png)
 
 ---
 
@@ -94,13 +94,13 @@ Run one or two Node.js/Express backend replicas on port 3010, expose them via Cl
 
 #### Screenshot 8 — Backend Deployment, Pods, and internal Service
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-58.png)
 
 ---
 
 #### Screenshot 9 — Backend logs showing successful startup and database connectivity
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-59.png)
 
 ---
 
@@ -114,13 +114,13 @@ Run one or two Next.js frontend replicas behind Nginx on port 80, reverse-proxyi
 
 #### Screenshot 10 — Frontend Deployment and Ready Pods
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-60.png)
 
 ---
 
 #### Screenshot 11 — Nginx reverse-proxy configuration showing the internal backend Service name
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-61.png)
 
 ---
 
@@ -134,13 +134,13 @@ Expose only the frontend publicly (LoadBalancer or Ingress), restrict backend ac
 
 #### Screenshot 12 — Frontend LoadBalancer or Ingress showing the public endpoint
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-62.png)
 
 ---
 
 #### Screenshot 13 — Internal backend Service and NetworkPolicy (or equivalent restriction)
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-63.png)
 
 ---
 

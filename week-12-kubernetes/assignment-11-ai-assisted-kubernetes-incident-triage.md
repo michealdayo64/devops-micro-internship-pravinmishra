@@ -20,13 +20,13 @@ Confirm every Book Review App pod is `Running` and `Ready` and that its Service 
 
 #### Screenshot 1 — `kubectl get pods` and `kubectl get endpoints` showing the Book Review App healthy
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-69.png)
 
 ---
 
 #### Screenshot 2 — Workspace folder structure for this assignment
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-70.png)
 
 ---
 
@@ -40,7 +40,7 @@ Add a `CLAUDE.md` telling Claude this is a read-only Kubernetes triage workflow:
 
 #### Screenshot 3 — `CLAUDE.md` showing the project overview, incident workflow, and safety rules
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-71.png)
 
 ---
 

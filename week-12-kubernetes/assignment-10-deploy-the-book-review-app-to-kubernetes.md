@@ -154,25 +154,25 @@ Confirm the frontend loads publicly, a full user flow reaches the backend and My
 
 #### Screenshot 14 — `kubectl get all` output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-65.png)
 
 ---
 
 #### Screenshot 15 — Functional Book Review App in the browser with the public URL or IP visible
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-64.png)
 
 ---
 
 #### Screenshot 16 — Frontend Pod logs
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-66.png)
 
 ---
 
 #### Screenshot 17 — Backend Pod logs showing successful requests or database activity
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-67.png)
 
 ---
 
@@ -192,7 +192,7 @@ Optionally package as a Helm chart, add HPA, add readiness/liveness probes, or c
 
 #### Screenshot 19 (optional) — Helm release, HPA, probes, or TLS evidence
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-68.png)
 
 ---
 

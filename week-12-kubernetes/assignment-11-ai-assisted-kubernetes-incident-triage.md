@@ -54,7 +54,7 @@ Ask Claude to propose a read-only, five-check `kubectl` triage plan — pod stat
 
 #### Screenshot 4 — Claude's proposed five-check plan, with no file created or cluster state changed
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-72.png)
 
 ---
 
@@ -68,13 +68,13 @@ Write a Bash script that runs the five read-only `kubectl` checks and writes a P
 
 #### Screenshot 5 — Script showing the five checks and how each one gathers its evidence
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-73.png)
 
 ---
 
 #### Screenshot 6 — `bash -n` and `ls -l` confirming the script is valid and executable
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-74.png)
 
 ---
 
@@ -88,7 +88,7 @@ Run the script against your current, unmodified deployment and confirm it report
 
 #### Screenshot 7 — Script output showing all five checks passing
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-75.png)
 
 ---
 
@@ -102,13 +102,13 @@ Wrap the script in a Claude Code skill restricted to read-only tools (no `Write`
 
 #### Screenshot 8 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-76.png)
 
 ---
 
 #### Screenshot 9 — `/k8s-triage` output for the healthy cluster
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-77.png)
 
 ---
 
@@ -122,13 +122,13 @@ Deliberately break your own deployment — an image tag that does not exist, or 
 
 #### Screenshot 10 — The pod in a failed state and the Service showing no Endpoints
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-78.png)
 
 ---
 
 #### Screenshot 11 — `/k8s-triage` output showing the diagnosis and the recommended `kubectl` command, not executed by Claude
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-79.png)
 
 ---
 
@@ -142,13 +142,13 @@ Review the recommendation, apply the fix yourself, confirm the pod returns to `R
 
 #### Screenshot 12 — Pod back to `Running`/`Ready` and the Service showing Endpoints again
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-80.png)
 
 ---
 
 #### Screenshot 13 — Second `/k8s-triage` run confirming recovery
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-81.png)
 
 ---
 

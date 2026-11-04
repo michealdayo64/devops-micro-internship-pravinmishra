@@ -92,7 +92,7 @@ Resolve any pending endpoint or unhealthy backend issues, then delete the Kubern
 
 #### Screenshot 6 — Clean final verification or resource deletion command output
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-82.png)
 
 ---
 

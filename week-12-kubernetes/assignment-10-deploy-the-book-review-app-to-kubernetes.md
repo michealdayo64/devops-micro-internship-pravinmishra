@@ -200,7 +200,29 @@ Optionally package as a Helm chart, add HPA, add readiness/liveness probes, or c
 
 Report the Kubernetes platform used, the public frontend URL/IP, a GitHub link to your manifests/Helm chart (if applicable), and the architecture diagram link. Summarize what worked, issues encountered and how they were resolved, and the tools/sources that helped the most.
 
-Write your answer here.
+1. The kubernetes platform i use was Amazon Elastic Kubernetes service. 
+2. This is my github link to my manifests `https://github.com/michealdayo64/kubernetes-projects.git`
+3. Architecture Diagram Link: `https://drive.google.com/file/d/1XNZVGi1WYVtUACr4kvby3B7SpSgLZUH7/view?usp=sharing`
+4. In the book-reviewa-app deployment, everything that worked below are;
+- Installation of eksctl cli tool that i use to create and manage my kubernetes cluster
+- Attaching of my cluster to my local kubectl current context
+- Creation of my namespace called book-review which i use as my default namespace
+- Then i created comfigMap and secret for my enviroment variable and secret varibles where i stored db_name, db_port, db_user db_passweod and jwt_secret
+- Pulling images from my docker hub
+- Creation of mysql-deployment and Cluster IP Service for internal/private communication and 
+- Creation of frontend and nginx deployment and Loadbalancer Service external/public communication
+- Creation of backend-deployment and Cluster IP for internal/private communication
+- Attachement of two replica pods to backend deployment
+- Creation of Network policies that retriction of communication. `Nginx -> Frontencd`, `frontend -> Backend`, `Backdned -> database`
+4. Tools that help me the most is;
+- Amazon EKS: Provided the managed Kubernetes environment for running the application.
+- eksctl: Simplified the creation and management of the EKS cluster.
+- kubectl: Used to create, inspect, configure, and troubleshoot Kubernetes resources.
+- Docker: Used to build and manage the application's container images.
+- Docker Hub: Served as the container image registry from which Kubernetes pulled the application images.
+5. Issues Encountered and Resolution: During the deployment and testing process, troubleshooting was necessary around Kubernetes configuration and application connectivity.
+One issue encountered during database testing was a MySQL authentication error indicating that the application database password was not being supplied. This required checking the environment variable names and their mappings to the Kubernetes Secret configuration.
+
 
 ---
 

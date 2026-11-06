@@ -380,59 +380,85 @@ This ensures that the backend services are accessible only through approved inte
 
 ### 3. Why is MySQL private?
 
-Write your answer here.
+MySQL is deployed in isolated private subnets because it stores sensitive application data, including user records and business information. Exposing the database directly to the internet would significantly increase its attack surface.
+To enforce security, the database Security Group allows inbound traffic only on TCP port 3306 from the Application Tier's Security Group. This ensures that only authorized backend services can establish database connections.
 
 ### 4. Why are multiple Availability Zones used?
 
-Write your answer here.
+Multiple Availability Zones are used to achieve high availability and fault tolerance. By distributing application resources across multiple Availability Zones within the same AWS Region, we reduce the risk of a single point of failure.
 
 ### 5. What is the difference between Multi-AZ/high availability and a read replica?
 
-Write your answer here.
+- Multi-AZ (High Availability)
+
+Amazon RDS Multi-AZ is designed to provide high availability and fault tolerance. It maintains a standby database in a different Availability Zone and synchronously replicates database changes to that standby.
+
+- Read Replica (Read Scalability)
+
+A Read Replica uses asynchronous replication to maintain a copy of the primary database.
+Unlike a Multi-AZ standby, a Read Replica can serve read-only application requests. This allows you to distribute read-heavy workloads across multiple database instances, reducing the query load on the primary database.
 
 ## Terraform
 
 ### 6. How did you divide your Terraform into modules?
 
-Write your answer here.
+I structured my Terraform configuration into reusable modules based on functional responsibilities and infrastructure layers. This follows the principle of separation of concerns, making the infrastructure easier to maintain, test, troubleshoot, and scale.
+
+I divided the infrastructure into five main modules:
+- Network
+- Security
+- Load-balancer
+- Compute
+- Database
 
 ### 7. How do the modules communicate through variables and outputs?
 
-Write your answer here.
+The root module orchestrates communication: lower-level modules (like Network) expose resource attributes as outputs (e.g., subnet_ids, security_group_ids), and the root main.tf passes those outputs into dependent modules as input variables.
 
 ### 8. What did you specifically check in `terraform plan`?
 
-Write your answer here.
+I verified the proposed action summary (+ to create, ~ to modify, - to destroy), checked that security groups had precise CIDRs without open ingress on internal ports, confirmed resource count, and ensured private subnets did not accidentally map public IPs.
 
 ## Agentic AI
 
 ### 9. What was the purpose of `CLAUDE.md`?
 
-Write your answer here.
+CLAUDE.md serves as a persistent project instruction and context file for Claude Code. It provides the AI agent with essential project information, architectural decisions, coding standards, and operational constraints before it starts working on the codebase.
 
 ### 10. What work did the Terraform Engineer subagent perform?
 
-Write your answer here.
+The Terraform Engineer subagent was responsible for infrastructure code development and refinement.
+I delegated Terraform-specific tasks to it so that it could focus on generating, reviewing, and improving Terraform configurations while following the architectural guidelines defined in CLAUDE.md.
 
 ### 11. What did the Architecture and Security Reviewer identify?
 
-Write your answer here.
+The Architecture and Security Reviewer subagent was responsible for evaluating the proposed Terraform configurations against the project's architectural requirements and AWS security best practices.
+It focused on identifying potential security vulnerabilities, misconfigurations, and architectural weaknesses before infrastructure deployment.
 
 ### 12. Why did you use Terraform MCP instead of relying only on Claude's existing Terraform knowledge?
 
-Write your answer here.
+I integrated Terraform MCP with Claude Code to give the AI agent access to up-to-date Terraform provider schemas, resource documentation, and configuration references.
+Although Claude has existing Terraform knowledge from its training data, that knowledge may not always reflect the latest AWS provider versions, resource attributes, or deprecated arguments.
+Terraform MCP provides access to current technical references, helping the agent generate configurations that align with the installed provider version and supported resource schemas.
 
 ### 13. What was the purpose of your validation hooks?
 
-Write your answer here.
+I implemented validation hooks in Claude Code to enforce automated quality checks and prevent invalid or non-compliant Terraform configurations from progressing through the development workflow.
+The hooks acted as automated guardrails by executing predefined checks at specific points during Claude Code's interaction with project files.
 
 ### 14. Describe one real issue Claude helped you troubleshoot.
 
-Write your answer here.
+During deployment, I encountered an issue where the internal Application Load Balancer (ALB) target group continuously reported my Node.js backend instances as unhealthy.
+I used Claude Code to investigate the issue by reviewing the Terraform target group configuration, health check settings, and the Node.js application configuration.
+The investigation identified a mismatch between the health check endpoint configured in the ALB target group and the actual health endpoint exposed by the Node.js application.
+The application exposed /health, but the ALB target group was configured to check a different path.
 
 ### 15. Describe one recommendation you reviewed, modified, or rejected instead of accepting blindly.
 
-Write your answer here.
+Claude suggested placing the NAT Gateway in a private subnet to "keep it secure." I rejected this recommendation because it misunderstood the purpose and routing requirements of a NAT Gateway.
+A NAT Gateway must be deployed in a public subnet with a route to the Internet Gateway. Private subnet resources then route their outbound internet traffic through the NAT Gateway.
+I corrected the Terraform configuration by placing the NAT Gateway in a public subnet, associating it with an Elastic IP, and updating the private subnet route tables to direct internet-bound traffic through the NAT Gateway.
+This allowed private EC2 instances to access external services for software updates and package installations without exposing them directly to inbound internet traffic.
 
 ---
 

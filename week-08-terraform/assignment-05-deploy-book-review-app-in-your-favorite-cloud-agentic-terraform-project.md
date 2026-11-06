@@ -8,7 +8,7 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 **Full Name:** Micheal Omotosho
 **Cloud Platform:** AWS
-**GitHub Repository URL:** Add your repository URL here  
+**GitHub Repository URL:** https://github.com/michealdayo64/devops-micro-internship-pravinmishra 
 **Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
 
 ---
@@ -274,7 +274,7 @@ Add a screenshot showing the book listing or book details.
 
 Add a screenshot showing the review functionality working successfully.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-96.png)
 
 ---
 
@@ -282,7 +282,7 @@ Add your screenshot here.
 
 Add a screenshot showing that the backend or API is working successfully.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-97.png)
 
 ---
 
@@ -290,11 +290,11 @@ Add your screenshot here.
 
 Add a screenshot showing successful database reads and writes.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-95.png)
 
 ## Public Application URL
 
-**Public Application URL / DNS:** Add the working public application URL or load-balancer DNS here
+**Public Application URL / DNS:** http://book-review-public-alb-1737082241.us-east-1.elb.amazonaws.com
 
 ---
 
@@ -312,7 +312,7 @@ You do not need to submit your complete Claude Code conversation history. Includ
 
 Add a screenshot showing one useful example of AI-assisted Terraform generation or improvement.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-98.png)
 
 ---
 
@@ -320,7 +320,7 @@ Add your screenshot here.
 
 Add a screenshot showing one structured architecture or security review result.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-99.png)
 
 ---
 
@@ -328,7 +328,7 @@ Add your screenshot here.
 
 Add a screenshot showing one AI-assisted troubleshooting interaction based on collected evidence.
 
-Add your screenshot here.
+![paste file](screenshots/week-08-screenshot-100.png)
 
 ---
 
@@ -367,11 +367,16 @@ Reflect on the architecture, Terraform implementation, and Agentic AI workflow. 
 
 ### 1. Why did you separate the Web, Application, and Database tiers?
 
-Write your answer here.
+I separated the Web, Application, and Database tiers to implement defense-in-depth and enforce the principle of least privilege.
+The Web tier handles presentation and incoming user requests, the Application tier processes business logic, and the Database tier manages persistent data.
+Each tier operates within its own security boundary, with security group rules restricting communication to only the necessary ports and sources. For example, the database accepts connections only from the application tier, never directly from the public internet.
+This architecture reduces the attack surface, limits the blast radius if one component is compromised, improves scalability, and makes the infrastructure easier to maintain independently."
 
 ### 2. Why is the Application Tier private?
 
-Write your answer here.
+The Application Tier is private because it hosts the backend services that handle sensitive business logic and communicate directly with the database. By placing it in private subnets without public IP addresses, we prevent direct internet access and reduce the attack surface.
+Access to the Application Tier is controlled through the internal Application Load Balancer, which receives requests from the Web Tier. Security Groups further restrict inbound traffic to only authorized sources and ports.
+This ensures that the backend services are accessible only through approved internal communication paths, following the principle of least privilege.
 
 ### 3. Why is MySQL private?
 

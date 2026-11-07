@@ -521,11 +521,11 @@ Suggested tags:
 
 ### LinkedIn Post URL
 
-Add your LinkedIn post URL here.
+https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-devsecops-terraform-share-7524721981339070464-hW1c/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg
 
 ### Published LinkedIn Post Screenshot — Mandatory
 
-Add a screenshot of the published LinkedIn post here.
+![paste file](screenshots/linkined-02.png)
 
 ---
 

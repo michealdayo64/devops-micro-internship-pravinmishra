@@ -91,8 +91,8 @@ Week 06 → AWS Cloud
 Week 07 → Azure Cloud
 [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)
 
-<!-- Week 08 → Terraform -->
-<!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
+Week 08 → Terraform
+[![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
 Week 09 → Ansible
 [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/)
@@ -100,11 +100,11 @@ Week 09 → Ansible
 Week 10 → Azure DevOps CI/CD
 [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/)
 
-<!-- Week 11 → Docker -->
-<!-- [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/) -->
+Week 11 → Docker
+[![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/)
 
-<!-- Week 12 → Kubernetes -->
-<!-- [![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/) -->
+Week 12 → Kubernetes
+[![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/)
 
 <!-- Week 13 → Final Project / Capstone -->
 <!-- [![Week 13 – Capstone](./badges/week-13.svg)](./week-13-final-project/) -->
@@ -138,7 +138,7 @@ Week 10 → Azure DevOps CI/CD
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-agile-scrum-share-7491820387991904256-cagX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/from-traditional-sdlc-to-agile-scrum-what-i-learned-during-week-5-of-my-devops-micro-internship-bb83687e89d8 |
 | 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-aws-cloudcomputing-share-7498355345463963649-FFnK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/week-6-of-my-devops-micro-internship-building-production-ready-applications-on-aws-71f88f9dec46 |
 | 07 | Azure Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-azure-aws-ugcPost-7500546721714970624-hZOL/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/from-aws-to-azure-deploying-a-3-tier-application-and-strengthening-cloud-security-850d5c7b397d |
-| 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
+| 08 | Terraform | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_aws-terraform-claudecode-ugcPost-7524718337658953729-8qy0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | — |
 | 09 | Ansible | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_devops-terraform-ansible-ugcPost-7508809236265541632-nayT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/deploying-epicbook-on-aws-with-terraform-and-ansible-a-practical-devops-journey-ff1fce7dcd05 |
 | 10 | Azure DevOps (CI/CD) | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/micheal-omotosho-577230199_how-do-you-deploy-new-features-to-a-running-ugcPost-7514953458089824256-Nmcm/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/from-manual-provisioning-to-automated-deployment-with-terraform-ansible-aws-and-azure-devops-7d24e117953c |
 | 11 | Docker | ✅ Completed | ✅ Solved | https://linkedin.com/posts/micheal-omotosho-577230199_devops-docker-dockercompose-share-7518753762862280705-U1gH/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7518753764627890177&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAC58XisBJdoafJCMJEdvAEQtCZ209939LWg | https://medium.com/@omotoshomicheal93/building-and-deploying-a-production-ready-containerized-application-with-docker-compose-aws-ec2-c9a17b56c83a |

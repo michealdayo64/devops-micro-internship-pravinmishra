@@ -116,7 +116,7 @@ Edit your Dockerfile to apply Claude's recommendation, rebuild the image, recrea
 
 #### Screenshot 9 — Your edited Dockerfile line(s) showing the fix
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-78.png)
 
 ---
 
@@ -128,7 +128,7 @@ Add your screenshot here.
 
 #### Screenshot 11 — Second `/docker-audit` run showing the previously failed check now passing
 
-Add your screenshot here.
+![paste file](screenshots/Screenshot-80.png)
 
 ---
 

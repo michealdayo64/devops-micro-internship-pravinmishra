@@ -48,7 +48,7 @@ Add a screenshot of `terraform plan` showing no pending changes.
 
 Add a screenshot of the folder structure showing `AI Assignment/`, `reports/`, and the Terraform project.
 
-![paste file](screenshots/week-08-screenshot-102.png)
+
 
 ## Questions
 
@@ -121,7 +121,7 @@ Add a screenshot showing `check_destructive_actions` and `check_open_ingress`, i
 
 Add a screenshot showing successful `bash -n` and `ls -l` output.
 
-![paste file](screenshots/week-08-screenshot-106.png)
+
 
 ## Questions
 
@@ -168,7 +168,7 @@ Verify that the review workflow reports a healthy result against your clean Terr
 
 Add a screenshot of the drift script output showing your full name and a `HEALTHY` result.
 
-![paste file](screenshots/week-08-screenshot-107.png)
+
 
 ---
 
@@ -176,7 +176,7 @@ Add a screenshot of the drift script output showing your full name and a `HEALTH
 
 Add a screenshot showing the captured script exit code `0`.
 
-![paste file](screenshots/week-08-screenshot-108.png)
+
 
 ## Questions
 
@@ -262,7 +262,7 @@ Add a screenshot of the controlled change you introduced, with sensitive details
 
 Add a screenshot of `/tf-drift-review` showing the detected difference and risk assessment.
 
-![paste file](screenshots/week-08-screenshot-112.png)
+
 
 ---
 
@@ -270,7 +270,7 @@ Add a screenshot of `/tf-drift-review` showing the detected difference and risk 
 
 Add a screenshot of `drift-detected-report.txt` showing your full name and the `WARN` or `FAIL` result.
 
-![paste file](screenshots/week-08-screenshot-113.png)
+
 
 ## Questions
 
@@ -318,7 +318,7 @@ Overall Status: FAIL
 
 Add a screenshot of `.claude/settings.json` showing the `PreToolUse` safety hook.
 
-![paste file](screenshots/week-08-screenshot-114.png)
+
 
 ---
 
@@ -372,7 +372,7 @@ Resolve the detected difference intentionally, verify the infrastructure returns
 
 Add a screenshot of the human-reviewed resolution or `terraform apply` output where applicable.
 
-![paste file](screenshots/week-08-screenshot-116.png)
+
 
 ---
 
@@ -391,7 +391,7 @@ Add a screenshot of `ls -lah reports` showing both:
 - `drift-detected-report.txt`
 - `resolved-report.txt`
 
-![paste file](screenshots/week-08-screenshot-118.png)
+
 
 ---
 
